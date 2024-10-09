@@ -1,0 +1,63 @@
+/* Variables */
+/* Variables */
+/* exports */
+:export {
+  brandColor: var(--brand-color);
+  defaultFont: var(--plus-jakarta-sans);
+}
+
+[data-theme=df] {
+  --bistre-brown: #957127;
+  --bistre-brown-dark: #4B3914;
+  --bistre-brown-light: #BA9659;
+  --bistre-brown-light1: rgba(202, 181, 142,0.5);
+  --dark-300: #858586;
+  --dark-200: #ADADAE;
+  --light-gray-bg-6: #c9c9ca;
+  --light-gray-bg-7: #f5f2ec;
+  --light-bistre-brown: #F8F2E7;
+  --light-gray-bg-2:#FFFFFF;
+  --light-gray-bg-4:#f8f2e7;
+  --light-blue: #f8f2e7;
+  --swiper-theme-color: #957127;
+  --dark400: #090909;
+  --f56: 3.5rem;
+}
+
+/* Media Mixins */
+[data-theme=df] .store-design-wrap {
+  padding: 60px 20px 40px 20px;
+}
+[data-theme=df] .store-design-wrap .store-info-wrap {
+  margin-bottom: 25px;
+}
+[data-theme=df] .store-design-wrap .store-info-wrap .store-info-img img {
+  width: 100%;
+  height: 100%;
+}
+[data-theme=df] .store-design-wrap .store-info-wrap .store-info-content {
+  text-align: center;
+}
+[data-theme=df] .store-design-wrap .store-info-wrap .store-info-content h4 {
+  font-size: var(--f24);
+  font-weight: var(--fw400);
+  margin-top: 20px;
+}
+[data-theme=df] .store-design-wrap .store-info-wrap .store-info-content address {
+  font-size: var(--f14);
+  font-weight: var(--fw400);
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto 15px auto;
+}
+[data-theme=df] .store-design-wrap .store-info-wrap .store-info-content button {
+  width: 100%;
+  text-align: center;
+  color: var(--bistre-brown);
+  font-weight: var(--fw600);
+  background: transparent;
+  padding: 0px;
+}
+[data-theme=df] .store-design-wrap .store-info-wrap .store-info-content button:hover {
+  color: var(--brand-color);
+}

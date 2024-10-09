@@ -1,0 +1,1047 @@
+@import './variables.scss';
+@import './mixins.scss';
+@import './theme/index.scss';
+
+.appointment-modal {
+  .modal-inner {
+    max-width: 1100px;
+  }
+  .step-number1 {
+      .modal-main-content {
+        .modal-actions {
+          button {
+            &.next-step-btn {
+              @include for-phone-only {
+                display: block;
+              }
+            }
+
+            &.back-step-btn {
+              @include for-phone-only {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .modal-main-content {
+      width: 100%;
+    }
+      .visit-us-sec {
+        .visit-over {
+          .heading-sec {
+            display: none;
+          }
+        }
+      }
+
+      .thankyou-wrapper {
+        text-align: center;
+        margin: 0 80px;
+        background-color: var(--light-gray-bg-4);
+
+        @include for-tablet-landscape-2 {
+          margin: 0;
+        }
+
+        h1 {
+          text-align: center;
+        }
+
+        .mobile-top-heading {
+          @include for-tablet-landscape-2 {
+            padding-top: 32px;
+            margin-bottom: 0;
+          }
+        }
+
+        .login-account-sec {
+          max-width: 502px;
+          margin: 0 auto;
+          text-align: center;
+
+          @include for-tablet-landscape-2 {
+            padding: 16px 8px;
+          }
+
+          @include themeStyles("df") {
+            background-color: var(--light-bistre-brown);
+
+            .account-form-wrapper {
+              .MuiFormControl-root {
+                label {
+                  color: var(--black-color);
+                }
+
+                .MuiInput-input {
+                  padding-bottom: 10px;
+                  color: var(--black-color);
+                  border-color: var(--black-color);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .modal-actions {
+        background: transparent;
+        margin-top: 30px;
+        @include themeStyles("df") {
+          button {
+            border-color: var(--bistre-brown);
+            color: var(--bistre-brown);
+
+            &:hover {
+              background-color: var(--bistre-brown);
+              color: var(--white-color);
+            }
+
+            &.dark-blue-btn {
+              border-color: var(--bistre-brown);
+              color: var(--bistre-brown);
+
+              &:hover {
+                background-color: var(--bistre-brown);
+                color: var(--white-color);
+              }
+            }
+          }
+        }
+
+        button {
+          padding: 16px;
+          font-weight: var(--fw600);
+          font-size: var(--f16);
+          line-height: 20px;
+
+          // &.next-step-btn {
+          //   @include for-phone-only {
+          //     display: none;
+          //   }
+          // }
+        }
+
+        button.dark-blue-btn {
+          background: transparent;
+          border-color: var(--black-color);
+          color: var(--black-color);
+
+          &:hover {
+            background: rgba(0, 0, 0, 0.04);
+          }
+        }
+
+        @include themeStyles("df") {
+          .modal-close-btn {
+            .icons-small {
+              display: block;
+            }
+          }
+        }
+      }
+
+      .view-step-padd {
+        .calander-div.step3-calender {
+          background: var(--light-gray-bg-4);
+          padding: 30px 40px;
+
+          .MuiDateCalendar-root {
+            max-height: initial;
+            padding-top: 10px;
+
+            .MuiPickersCalendarHeader-root {
+              margin-top: 0px;
+
+              @include for-tablet-landscape-2 {
+                padding-left: 0px;
+                padding-right: 0px;
+              }
+            }
+          }
+
+          @include for-tablet-landscape-2 {
+            padding: 15px;
+          }
+
+          @include themeStyles("df") {
+            background-color: var(--light-bistre-brown);
+          }
+        }
+
+        .contact-selection {
+          .MuiFormControl-root label {
+            background-color: var(--light-gray-bg-4);
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            margin-left: 0px;
+            margin-right: 0px;
+
+            @include themeStyles("df") {
+              background-color: var(--light-bistre-brown);
+            }
+          }
+
+          .MuiFormControl-root {
+            width: 100%;
+          }
+        }
+
+        .vaconfirm-inner {
+          background: var(--light-gray-bg-4);
+          padding: 30px 40px;
+          margin: 0px;
+          width: 100%;
+          max-width: 800px;
+
+          @include for-tablet-landscape-2 {
+            padding: 20px;
+          }
+
+          @include themeStyles("df") {
+            max-width: 100%;
+            background: transparent;
+            padding: 0px;
+
+            .va-store-contact-data {
+              background-color: var(--light-bistre-brown);
+              padding: 24px;
+
+              .decription-book-confirmation {
+                p {
+                  a {
+                    color: var(--bistre-brown);
+                    font-weight: var(--fw600);
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .store-vaimg-block {
+          background-color: var(--dark-gray-color);
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+
+          .row {
+            margin: 0px;
+            padding: 10px 5px;
+
+            .timer-label {
+              font-weight: var(--fw600);
+              font-size: var(--f14);
+              line-height: 20px;
+              color: var(--primary-color);
+
+              .timer-label-span-block {
+                display: block;
+              }
+            }
+
+            .timer {
+              color: var(--light-gray-color-1);
+              font-weight: var(--fw600);
+              font-size: var(--f14);
+              line-height: 18px;
+              display: flex;
+              align-items: center;
+
+              .material-icons-outlined {
+                font-size: 20px;
+                margin-right: 6px;
+              }
+            }
+          }
+        }
+
+        .account-sec-step-form {
+          padding-top: 40px;
+
+          p {
+            font-size: var(--f14);
+
+            a {
+              color: var(--light-gray-bg-5);
+              text-decoration: none;
+            }
+          }
+
+          .checkbox-text {
+            a {
+              color: var(--light-gray-bg-5);
+              text-decoration: none;
+              font-weight: var(--fw600);
+            }
+          }
+        }
+
+        .va-store-contact-data {
+          h5 {
+            font-weight: var(--fw600);
+            font-size: var(--f14);
+            margin-bottom: 4px;
+          }
+
+          p {
+            font-weight: var(--fw400);
+            font-size: var(--f14);
+            margin-bottom: 4px;
+          }
+
+          p.decription-va {
+            border-top: 1px solid #A4AAAE;
+            margin-top: 20px;
+            padding-top: 20px;
+          }
+        }
+      }
+
+      .step-wrapper {
+        .c-stepper__title {
+          color: var(--light-gray-color-1);
+
+          span {
+            &:last-child {
+              text-transform: uppercase;
+            }
+          }
+        }
+
+        li.c-stepper__item.active .c-stepper__title {
+          color: var(--primary-color);
+        }
+      }
+  .virtual-appointment-section {
+    .expert-wrapper {
+      flex-direction: row-reverse;
+    }
+  }
+
+  .time-wrapper {
+    background: var(--light-gray-bg-4);
+    padding: 30px 40px;
+
+    @include themeStyles("df") {
+      background-color: var(--light-bistre-brown);
+    }
+
+    h3 {
+      font-weight: var(--fw600);
+      font-size: var(--f18);
+      line-height: 23px;
+      color: var(--primary-color);
+      text-align: center;
+    }
+
+    .time-option {
+      display: flex;
+      flex-wrap: wrap;
+      max-height: 270px;
+      margin: 0px -12px;
+
+      @include for-phone-only {
+        margin: 0px;
+      }
+
+      .time-options-blocks {
+        width: 33.3%;
+        padding: 0px 6px;
+
+        @include for-phone-only {
+          width: 100%;
+          margin-bottom: 12px;
+        }
+
+        .option-selections {
+          border: 1px solid var(--primary-color);
+          padding: 12px;
+          margin-bottom: 8px;
+          font-weight: var(--fw600);
+          font-size: var(--f14);
+          line-height: 20px;
+          color: var(--primary-color);
+          width: 100%;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          margin-right: 0px;
+          white-space: nowrap;
+
+          &:not(.active) {
+            &:hover {
+              background: var(--brand-light-color);
+            }
+          }
+
+          &:nth-child(2n) {
+            margin-right: 0px;
+          }
+
+          &.active {
+            background: var(--dark-blue-color);
+            border: 1px solid var(--dark-gray-color-2);
+            color: var(--white-color);
+          }
+
+          @include themeStyles("df") {
+            background-color: transparent;
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+
+            &.active,
+            &:hover {
+              background-color: var(--bistre-brown);
+              color: var(--white-color);
+              border-color: var(--bistre-brown);
+            }
+          }
+        }
+
+        .filled-chip {
+          position: absolute;
+          top: -12px;
+          left: 0;
+          right: 0;
+          width: 100%;
+          max-width: fit-content;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+
+    &.select-store {
+      .option-selections {
+        &.active {
+          background: var(--dark-gray-color-2);
+          border: 1px solid var(--dark-gray-color-2);
+          color: var(--white-color);
+        }
+      }
+    }
+
+    @include for-tablet-landscape-2 {
+      margin-bottom: 25px;
+      padding: 15px;
+    }
+  }
+
+  .locationDetail {
+    background: var(--light-gray-bg-4);
+    padding: 30px 22px;
+    height: 100%;
+
+    @include themeStyles("df") {
+      background-color: var(--light-bistre-brown);
+    }
+
+    .store-address-wrap {
+      p {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
+        @include for-tablet-landscape-2 {
+          justify-content: center;
+        }
+
+        a {
+          display: flex;
+          align-items: center;
+
+          img {
+            padding-bottom: 0px;
+            margin-right: 10px;
+          }
+
+          .underline {
+            text-decoration: underline;
+          }
+        }
+
+        .material-icons-outlined {
+          margin-right: 8px;
+        }
+      }
+    }
+
+    h3 {
+      font-weight: var(--fw600);
+      font-size: var(--f14);
+      line-height: 18px;
+      text-transform: uppercase;
+      color: var(--primary-color);
+    }
+
+    img {
+      padding-bottom: 1rem;
+    }
+
+    .location-contact {
+      padding-top: 16px;
+    }
+
+    p {
+      font-weight: var(--fw600);
+      font-size: var(--f14);
+      line-height: 18px;
+      color: var(--primary-color);
+      margin-bottom: 18px;
+    }
+
+    @include for-tablet-landscape-2 {
+      padding: 15px;
+    }
+  }
+
+  .calander-wrapper {
+    background: var(--white-color);
+    height: 100%;
+
+    .calander-box {
+      background: var(--light-gray-bg-4);
+      padding: 20px 40px;
+
+      .MuiPickersCalendarHeader-root {
+        position: relative;
+        justify-content: center;
+        margin-bottom: 18px;
+
+        .MuiPickersCalendarHeader-labelContainer {
+          left: 14px;
+          position: absolute;
+        }
+
+        .MuiPickersArrowSwitcher-root {
+          position: absolute;
+          width: 100%;
+
+          button {
+            position: absolute;
+            top: -17px;
+            width: 44px;
+            height: 44px;
+            border: 1px solid var(--primary-color);
+
+            &:first-child {
+              left: 0;
+            }
+
+            &:last-child {
+              right: 6px;
+            }
+          }
+        }
+      }
+    }
+
+    .account-sec {
+      form {
+        max-width: 100%;
+
+        .MuiTextField-root {
+          width: 100%;
+        }
+      }
+    }
+
+    .time-wrapper {
+      .time-option {
+        overflow: auto;
+
+        .time-options-blocks {
+          @include for-phone-only {
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
+  }
+
+  .appointment-form {
+    .m-order-1 {
+      @include for-tablet-landscape-2 {
+        order: 1;
+      }
+    }
+
+    .m-order-2 {
+      @include for-tablet-landscape-2 {
+        order: 2;
+      }
+    }
+
+    .account-sec {
+      padding: 30px 40px;
+      height: 100%;
+
+      @include for-tablet-landscape-2 {
+        padding: 0 15px;
+      }
+
+      @include themeStyles("df") {
+        p {
+          color: var(--black-color);
+        }
+      }
+
+      a {
+        color: var(--light-gray-bg-5);
+        text-decoration: none;
+
+        @include themeStyles("df") {
+          color: var(--black-color);
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .appointment-schedule {
+      background: var(--light-gray-bg-4);
+      padding: 24px;
+
+      @include themeStyles("df") {
+        background-color: var(--light-bistre-brown);
+      }
+
+      .m-order-1 {
+        @include for-tablet-landscape-2 {
+          order: 1;
+        }
+      }
+
+      .m-order-2 {
+        @include for-tablet-landscape-2 {
+          order: 1;
+        }
+      }
+
+      .locationDetail {
+        padding: 0;
+
+        @include themeStyles("df") {
+          background: transparent;
+        }
+
+        .collection-box {
+          background: var(--dark-gray-color);
+          padding: 24px 10px;
+          font-weight: var(--fw600);
+          font-size: var(--f14);
+          line-height: 20px;
+          color: var(--primary-color);
+          margin-bottom: 14px;
+
+          @include themeStyles("df") {
+            background: var(--bistre-brown);
+
+            .timer-label,
+            .timer,
+            .col-6 {
+              color: var(--white-color);
+            }
+          }
+
+          .timer {
+
+
+            color: var(--light-gray-color-1);
+            font-weight: var(--fw600);
+            font-size: var(--f14);
+            line-height: 18px;
+            display: flex;
+            align-items: center;
+
+            .material-icons-outlined {
+              margin-right: 6px;
+            }
+          }
+
+          .timer-label {
+            margin-bottom: 10px;
+          }
+
+          .address-wrapper {
+            border-bottom: 1px solid var(--light-gray-color-1);
+            margin-top: 20px;
+            padding-top: 20px;
+
+            @include themeStyles("df") {
+              border: none;
+            }
+
+            h5 {
+              font-weight: var(--fw600);
+              font-size: var(--f14);
+              line-height: 18px;
+              text-transform: uppercase;
+              color: var(--primary-color);
+            }
+
+            @include themeStyles("df") {
+              p {
+                font-weight: 800;
+              }
+
+              .whatsapp,
+              .call {
+                .value-det {
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+        }
+
+        .address-wrapper {
+          padding-top: 20px;
+          border-top: 1px solid var(--light-gray-color-1);
+        }
+      }
+
+      @include for-tablet-landscape-2 {
+        padding: 15px;
+      }
+    }
+  }
+
+  .virtual-featured-card {
+    .choose-logo {
+      @include for-tablet-landscape-2 {
+        max-width: 106px !important;
+        padding: 0;
+      }
+    }
+  }
+
+  .features-card {
+    .create-design-section {
+      .choose-section {
+        .choose-section-thumb {
+          align-items: center;
+
+          &.virtual-box {
+            margin-bottom: 20px;
+            cursor: pointer;
+            .virtual-content {
+              padding: 12px 20px 19px 20px;
+              justify-content: space-between;
+
+              @include for-tablet-landscape-2 {
+                align-items: flex-start !important;
+                padding: 10px 8px !important;
+                flex-direction: column;
+              }
+
+              &:first-child {
+                width: 100%;
+              }
+
+              .choose-details {
+                @include for-tablet-landscape-2 {
+                  text-align: left;
+                }
+
+                h5 {
+                  margin-bottom: 8px;
+                  font-size: var(--f14);
+                }
+
+                p {
+                  font-size: var(--f12);
+
+                  @include for-tablet-landscape-2 {
+                    margin-bottom: 15px;
+                  }
+                }
+              }
+
+              .appointment-time {
+                font-weight: var(--fw600);
+                font-size: var(--f12);
+                line-height: 18px;
+                width: -webkit-fill-available;
+                max-width: 84px;
+
+                @include themeStyles("df") {
+                  background-color: transparent;
+                  border: 1px solid var(--primary-color);
+                  color: var(--primary-color);
+                  max-width: fit-content;
+                }
+
+                @include for-tablet-landscape-2 {
+                  margin-left: 0 !important;
+                  align-items: center;
+                  padding: 6px 8px;
+                  font-weight: var(--fw600);
+                  font-size: var(--f12);
+                  line-height: 15px;
+                }
+
+                .material-icons-outlined {
+                  font-size: var(--f16);
+
+                  @include for-tablet-landscape-2 {
+                    font-weight: var(--fw600);
+                    font-size: var(--f12);
+                    line-height: 15px;
+                  }
+                }
+              }
+            }
+
+            @include themeStyles("df") {
+              background-color: var(--light-bistre-brown);
+            }
+          }
+
+          .choose-logo {
+            height: 100%;
+            max-width: 160px;
+
+            img {
+              @include for-tablet-landscape-2 {
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+
+            @include for-tablet-landscape-2 {
+              padding-bottom: 0px;
+            }
+          }
+        }
+
+        .select-card {
+          border: 1px black solid;
+
+          @include themeStyles("df") {
+            border-color: var(--bistre-brown);
+          }
+        }
+      }
+    }
+  }
+
+  .thanku-container {
+    .heading {
+      text-align: center;
+      margin-top: 0px;
+    }
+
+    @include themeStyles("df") {
+      background-color: var(--light-bistre-brown);
+      width: 100%;
+      max-width: 90%;
+      margin: 0 auto;
+      padding: 30px 0px;
+
+      @include for-tablet-landscape-2 {
+        padding: 15px;
+      }
+
+      h1.heading {
+        margin-top: 0px;
+        font-size: var(--f48);
+
+        @include for-tablet-landscape-2 {
+          font-size: var(--f24);
+          line-height: normal;
+        }
+      }
+
+      .order-text-contianer {
+        background: transparent;
+        padding-top: 0px;
+        margin-top: 25px;
+        padding-bottom: 10px;
+
+        h4 {
+          @include for-tablet-landscape-2 {
+            font-size: var(--f16) !important;
+            line-height: normal;
+          }
+        }
+      }
+    }
+  }
+
+  @include themeStyles("df") {
+    .MuiDateCalendar-root {
+      .MuiDayCalendar-slideTransition {
+        .MuiDayCalendar-weekContainer {
+          .MuiPickersDay-root {
+            background-color: var(--white-color);
+            color: var(--black-color);
+
+            &:hover {
+              opacity: 0.8;
+            }
+
+            &.MuiPickersDay-today,
+            &.Mui-selected {
+              background-color: var(--bistre-brown);
+              border-color: var(--bistre-brown);
+              color: var(--white-color);
+            }
+
+            &.MuiPickersDay-dayOutsideMonth {
+              background-color: var(--bistre-brown-light1);
+              color: var(--white-color);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .appointment_type-form-sec {
+    .appointment-type-box {
+      display: flex;
+      cursor: pointer;
+      height: 100%;
+      align-items: center;
+      @include themeStyles("df") {
+        background-color: var(--light-bistre-brown);
+      }
+
+      @include themeStyles("ab") {
+        background-color: var(--light-gray-bg-4);
+      }
+      .appointment-type-img {
+        width: 30%;
+        margin-right: 15px;
+
+        img {
+          width: 100%;
+          object-fit: cover;
+          @include themeStyles("ab"){
+            height: 150px;
+          }
+          @include themeStyles("df"){
+            height: 125.5px;
+          }
+        }
+      }
+
+      .appointment-type-cntnt {
+        width: 70%;
+        padding-right: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        h4 {
+          font-size: var(--f16);
+          font-weight: var(--fw600);
+          margin-bottom: 5px;
+        }
+
+        p {
+          margin-bottom: 0px;
+          font-size: var(--f14);
+          font-weight: var(--fw400);
+          line-height: 20px;
+        }
+      }
+
+      @include themeStyles("df") {
+        &.card-active {
+          border: 1px solid var(--bistre-brown);
+        }
+      }
+
+      @include themeStyles("ab") {
+        &.card-active {
+          border: 1px solid var(--brand-color);
+        }
+      }
+
+      @include for-tablet-landscape-2 {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .step-mobile-title {
+    display: none;
+
+    @include for-tablet-landscape-2 {
+      display: block;
+
+      h5 {
+        text-align: center;
+        margin-top: 30px;
+      }
+    }
+  }
+
+  .filled-chip {
+    background: var(--dark-gray-color);
+    height: 23px;
+    border-radius: 0px;
+
+    span {
+      color: var(--primary-color);
+      font-size: var(--f12);
+      font-weight: 600;
+      padding-left: 7px;
+      padding-right: 7px;
+    }
+  }
+  .inner-banner-theme{
+    @include themeStyles("df"){
+    background-color: var(--light-brown-2);
+    padding: 61.5px 0px;
+    margin-bottom: 30px;
+    }
+    @include themeStyles("ab"){
+      padding: 60px 0px;
+      p{
+        margin-bottom: 0px;
+        width: 100%;
+        max-width: 425px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      }
+  }
+  &.df-appointment-page{
+    position: relative;
+    z-index: 0;
+    &::before {
+      content: '';
+      background-color: var(--light-brown-2);
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      z-index: -1;
+      max-height: 239px;
+  }
+  .book-appointment{
+    padding-top: 60px;
+    .step-wrapper {
+      margin-bottom: 110px;
+    }
+    .location-wrapper,.btn-actions{
+      width: 100%;
+      max-width: 1146px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  }
+  &.ab-appointment-page{
+    .book-appointment{
+      padding-top: 60px;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.ring-calulator-form {
+  width: 100%;
+  max-width: 798px;
+  margin: 0 auto;
+}
+
+.calculator-results-sec .calculater-result-header {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}

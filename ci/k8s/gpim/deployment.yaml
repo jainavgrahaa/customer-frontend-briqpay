@@ -1,0 +1,60 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: customer-ui-gpim
+  labels:
+    app: customer-ui-gpim
+  namespace: customer-ui
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: customer-ui-gpim
+  template:
+    metadata:
+      labels:
+        app: customer-ui-gpim
+    spec:
+      containers:
+        - name: customer-ui-gpim
+          image: nj/customer-ui-gpim
+          ports:
+            - containerPort: 3002
+              name: http-port
+          livenessProbe:
+            httpGet:
+              path: /assets/images/logo.png
+              port: http-port
+              scheme: HTTP
+            initialDelaySeconds: 10
+            timeoutSeconds: 5
+            periodSeconds: 10
+            failureThreshold: 3
+            successThreshold: 1
+          startupProbe:
+            httpGet:
+              path: /assets/images/logo.png
+              port: http-port
+              scheme: HTTP
+            initialDelaySeconds: 30
+            timeoutSeconds: 30
+            periodSeconds: 15
+            failureThreshold: 15
+            successThreshold: 1
+          readinessProbe:
+            httpGet:
+              path: /assets/images/logo.png
+              port: http-port
+              scheme: HTTP
+            initialDelaySeconds: 30
+            timeoutSeconds: 30
+            periodSeconds: 15
+            failureThreshold: 15
+            successThreshold: 1
+          resources:
+            requests:
+              cpu: 50m
+              memory: 50Mi
+          env:
+            - name: NODE_ENV
+              value: "gpim"

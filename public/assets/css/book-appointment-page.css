@@ -1,0 +1,1121 @@
+/* Variables */
+/* Variables */
+/* exports */
+:export {
+  brandColor: var(--brand-color);
+  defaultFont: var(--plus-jakarta-sans);
+}
+
+/* Media Mixins */
+:root {
+  --alice-blue-color: #f0f8ff;
+  --brand-color: #121213;
+  --brand-light-color: #fff;
+  --link-color: rgb(13, 98, 255);
+  --link-color-hover: darken(var(--link-color), 10%);
+  --black-color: #000;
+  --black-color-2: #333335;
+  --white-color: #fff;
+  --white-color-2: #F5F5F5;
+  --pista-green: #F3F8F6;
+  --dark-blue-color: #2A3E52;
+  --light-gray-color: #ccc;
+  --light-gray-color-1: #A4AAAE;
+  --light-gray-color-2: #666666;
+  --primary-color: #1d1f1e;
+  --light-gray-bg-1: #dedde0;
+  --light-gray-bg-2: #F0F6FD;
+  --light-gray-bg-3: #D9D9D9;
+  --light-gray-bg-4: #F8F8F8;
+  --light-gray-bg-5: #748DA6;
+  --medium-gray: #aaa;
+  --dark-shade-gray: #222;
+  --light-grayish-blue: #e2e3e4;
+  --lighten-dark-color-50: lighten(var(--black-color), 50%);
+  --lighten-light-color-50: lighten(var(--white-color), 50%);
+  --lighten-transparent-10: fade(var(--white-color), 90%);
+  --pos_absolute: absolute;
+  --dark-gray-color: #DADEE0;
+  --dark-gray-color-2: #2A3E52;
+  --light-blue: #F0F6FD;
+  --orange: #e24b1b;
+  --plate-sliver: #C8C0B3;
+  --modal-bg-color: #1d1f1eb5;
+  --inherit-color: inherit;
+  --light-green-color: #bfb;
+  --light-brown: #BA9659;
+  --light-brown-2: #FFFCF6;
+  --light-brown-3: #957127;
+  --light-brown-4: #F4E8DA;
+  --light-brown-5: #D6BB8F;
+  --light-grey-6: #dadee0;
+  --bistre-brown: #957127;
+  --black-2: #333335;
+  --swiper-theme-color: #2A3E52;
+  --plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
+  --prata-font: "Prata", serif;
+  --playfair-display: "Playfair Display", serif;
+  --fw400: 400;
+  --fw500: 500;
+  --fw600: 600;
+  --fweight700: 700;
+  --default-lg-fontsize: 18px;
+  --default-desktop-fontsize: 14px;
+  --default-mobile-fontsize: 14px;
+  --f10: 0.625rem;
+  --f12: 0.857rem;
+  --f13: 0.929rem;
+  --f14: 1rem;
+  --f15: 1.071rem;
+  --f16: 1.143rem;
+  --f18: 1.286rem;
+  --f20: 1.429rem;
+  --f24: 1.714rem;
+  --f28: 1.75rem;
+  --f30: 2.143rem;
+  --f32: 2rem;
+  /* 32px */
+  --f34: 2.125rem;
+  --f36: 2.571rem;
+  --f40: 2.857rem;
+  --f48: 3.429rem;
+  --f64: 4.571rem;
+  --f80: 5.714rem;
+  --ab-primary-color: #1D1F1E;
+  --Ivy-font: "Ivy Mode";
+  --Libre-franklin: "Libre Franklin", sans-serif;
+  --df-primary-color: #333335;
+  --df-required-tcolor: #E54545;
+}
+
+:export {
+  brandColor: var(--brand-color);
+  defaultFont: var(--plus-jakarta-sans);
+}
+
+.book-appointment h2 {
+  font-size: 40px;
+  text-align: center;
+  color: #1D1F1E;
+  margin: 30px 0px !important;
+}
+.book-appointment .visit-us-sec .visit-over .heading-sec {
+  display: none;
+}
+.book-appointment .thankyou-wrapper {
+  text-align: center;
+  margin: 0 80px;
+  background-color: var(--light-gray-bg-4);
+}
+@media (max-width: 992px) {
+  .book-appointment .thankyou-wrapper {
+    margin: 0;
+  }
+}
+.book-appointment .thankyou-wrapper h1 {
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .book-appointment .thankyou-wrapper .mobile-top-heading {
+    padding-top: 32px;
+    margin-bottom: 0;
+  }
+}
+.book-appointment .thankyou-wrapper .login-account-sec {
+  max-width: 502px;
+  margin: 0 auto;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .book-appointment .thankyou-wrapper .login-account-sec {
+    padding: 16px 8px;
+  }
+}
+body[data-theme=df] .book-appointment .thankyou-wrapper .login-account-sec {
+  background-color: var(--light-bistre-brown);
+}
+body[data-theme=df] .book-appointment .thankyou-wrapper .login-account-sec .account-form-wrapper .MuiFormControl-root label {
+  color: var(--black-color);
+}
+body[data-theme=df] .book-appointment .thankyou-wrapper .login-account-sec .account-form-wrapper .MuiFormControl-root .MuiInput-input {
+  padding-bottom: 10px;
+  color: var(--black-color);
+  border-color: var(--black-color);
+}
+.book-appointment .btn-actions {
+  background: transparent;
+  display: flex;
+  margin-top: 20px;
+}
+body[data-theme=ab] .book-appointment .btn-actions .MuiButton-outlined,
+body[data-theme=ab] .book-appointment .btn-actions .bordered-btn {
+  min-width: 133px;
+  min-height: 44px;
+  font-size: var(--f14);
+  font-weight: var(--fw600);
+  border: 1px solid;
+  background: transparent;
+  padding: 5px 15px;
+  text-transform: initial;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  body[data-theme=ab] .book-appointment .btn-actions .MuiButton-outlined,
+  body[data-theme=ab] .book-appointment .btn-actions .bordered-btn {
+    font-size: var(--f14);
+    min-height: 45px;
+  }
+}
+body[data-theme=ab] .book-appointment .btn-actions .MuiButton-outlined:hover,
+body[data-theme=ab] .book-appointment .btn-actions .bordered-btn:hover {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+body[data-theme=ab] .book-appointment .btn-actions .MuiButton-outlined img,
+body[data-theme=ab] .book-appointment .btn-actions .MuiButton-outlined span,
+body[data-theme=ab] .book-appointment .btn-actions .bordered-btn img,
+body[data-theme=ab] .book-appointment .btn-actions .bordered-btn span {
+  margin-right: 8px;
+}
+body[data-theme=ab] .book-appointment .btn-actions .MuiButton-outlined[disabled],
+body[data-theme=ab] .book-appointment .btn-actions .bordered-btn[disabled] {
+  opacity: 0.6;
+}
+body[data-theme=ab] .book-appointment .btn-actions .MuiButton-image_with_link {
+  font-size: var(--f14);
+}
+body[data-theme=ab] .book-appointment .btn-actions .MuiButton-image_with_link:hover {
+  background: transparent;
+  cursor: auto;
+}
+body[data-theme=ab] .book-appointment .btn-actions .MuiButton-image_with_link img,
+body[data-theme=ab] .book-appointment .btn-actions .MuiButton-image_with_link span {
+  margin-right: 8px;
+  font-size: var(--f14);
+}
+body[data-theme=ab] .book-appointment .btn-actions .MuiButton-image_with_link a {
+  font-size: var(--f14);
+}
+body[data-theme=df] .book-appointment .btn-actions button {
+  border-color: var(--bistre-brown);
+  color: var(--bistre-brown);
+}
+body[data-theme=df] .book-appointment .btn-actions button:hover {
+  background-color: var(--bistre-brown);
+  color: var(--white-color);
+}
+body[data-theme=df] .book-appointment .btn-actions button.dark-blue-btn {
+  border-color: var(--bistre-brown);
+  color: var(--bistre-brown);
+}
+body[data-theme=df] .book-appointment .btn-actions button.dark-blue-btn:hover {
+  background-color: var(--bistre-brown);
+  color: var(--white-color);
+}
+.book-appointment .btn-actions button {
+  padding: 16px;
+  font-weight: var(--fw600);
+  font-size: var(--f16);
+  line-height: 20px;
+}
+.book-appointment .btn-actions button.dark-blue-btn {
+  background: transparent;
+  border-color: var(--black-color);
+  color: var(--black-color);
+}
+.book-appointment .btn-actions button.dark-blue-btn:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+body[data-theme=df] .book-appointment .btn-actions .modal-close-btn .icons-small {
+  display: block;
+}
+.book-appointment .view-step-padd .time-wrapper {
+  background: var(--light-gray-bg-4);
+  padding: 30px 40px;
+}
+body[data-theme=df] .book-appointment .view-step-padd .time-wrapper {
+  background-color: var(--light-bistre-brown);
+}
+.book-appointment .view-step-padd .time-wrapper h3 {
+  font-weight: var(--fw600);
+  font-size: var(--f16);
+  line-height: 23px;
+  color: var(--primary-color);
+  text-align: center;
+}
+.book-appointment .view-step-padd .time-wrapper .time-option {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 270px;
+  margin: 0px -12px;
+}
+@media (max-width: 599px) {
+  .book-appointment .view-step-padd .time-wrapper .time-option {
+    margin: 0px;
+  }
+}
+.book-appointment .view-step-padd .time-wrapper .time-option .time-options-blocks {
+  width: 33.3%;
+  padding: 0px 6px;
+}
+@media (max-width: 599px) {
+  .book-appointment .view-step-padd .time-wrapper .time-option .time-options-blocks {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+}
+.book-appointment .view-step-padd .time-wrapper .time-option .time-options-blocks .option-selections {
+  border: 1px solid var(--primary-color);
+  padding: 12px;
+  margin-bottom: 8px;
+  font-weight: var(--fw600);
+  font-size: var(--f14);
+  line-height: 20px;
+  color: var(--primary-color);
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-right: 0px;
+  white-space: nowrap;
+}
+.book-appointment .view-step-padd .time-wrapper .time-option .time-options-blocks .option-selections:not(.active):hover {
+  background: var(--brand-light-color);
+}
+.book-appointment .view-step-padd .time-wrapper .time-option .time-options-blocks .option-selections:nth-child(2n) {
+  margin-right: 0px;
+}
+.book-appointment .view-step-padd .time-wrapper .time-option .time-options-blocks .option-selections.active {
+  background: var(--dark-blue-color);
+  border: 1px solid var(--dark-gray-color-2);
+  color: var(--white-color);
+}
+body[data-theme=df] .book-appointment .view-step-padd .time-wrapper .time-option .time-options-blocks .option-selections {
+  background-color: transparent;
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+body[data-theme=df] .book-appointment .view-step-padd .time-wrapper .time-option .time-options-blocks .option-selections.active, body[data-theme=df] .book-appointment .view-step-padd .time-wrapper .time-option .time-options-blocks .option-selections:hover {
+  background-color: var(--bistre-brown);
+  color: var(--white-color);
+  border-color: var(--bistre-brown);
+}
+.book-appointment .view-step-padd .time-wrapper .time-option .time-options-blocks .filled-chip {
+  position: absolute;
+  top: -12px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.book-appointment .view-step-padd .time-wrapper.select-store .option-selections.active {
+  background: var(--dark-gray-color-2);
+  border: 1px solid var(--dark-gray-color-2);
+  color: var(--white-color);
+}
+@media (max-width: 992px) {
+  .book-appointment .view-step-padd .time-wrapper {
+    margin-bottom: 25px;
+    padding: 15px;
+  }
+}
+.book-appointment .view-step-padd .locationDetail {
+  padding: 0;
+}
+body[data-theme=df] .book-appointment .view-step-padd .locationDetail {
+  background: transparent;
+}
+.book-appointment .view-step-padd .locationDetail .collection-box {
+  background: var(--dark-gray-color);
+  padding: 24px 10px;
+  font-weight: var(--fw600);
+  font-size: var(--f14);
+  line-height: 20px;
+  color: var(--primary-color);
+  margin-bottom: 14px;
+}
+body[data-theme=df] .book-appointment .view-step-padd .locationDetail .collection-box {
+  background: var(--bistre-brown);
+}
+body[data-theme=df] .book-appointment .view-step-padd .locationDetail .collection-box .timer-label,
+body[data-theme=df] .book-appointment .view-step-padd .locationDetail .collection-box .timer,
+body[data-theme=df] .book-appointment .view-step-padd .locationDetail .collection-box .col-6 {
+  color: var(--white-color);
+}
+.book-appointment .view-step-padd .locationDetail .collection-box .timer {
+  color: var(--light-gray-color-1);
+  font-weight: var(--fw600);
+  font-size: var(--f14);
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+}
+.book-appointment .view-step-padd .locationDetail .collection-box .timer .material-icons-outlined {
+  margin-right: 6px;
+}
+.book-appointment .view-step-padd .locationDetail .collection-box .timer-label {
+  margin-bottom: 10px;
+}
+.book-appointment .view-step-padd .locationDetail .collection-box .address-wrapper {
+  border-bottom: 1px solid var(--light-gray-color-1);
+  margin-top: 20px;
+  padding-top: 20px;
+}
+body[data-theme=df] .book-appointment .view-step-padd .locationDetail .collection-box .address-wrapper {
+  border: none;
+}
+.book-appointment .view-step-padd .locationDetail .collection-box .address-wrapper h3 {
+  font-weight: var(--fw600);
+  font-size: var(--f14);
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+body[data-theme=df] .book-appointment .view-step-padd .locationDetail .collection-box .address-wrapper p {
+  font-weight: 800;
+}
+body[data-theme=df] .book-appointment .view-step-padd .locationDetail .collection-box .address-wrapper .whatsapp .value-det,
+body[data-theme=df] .book-appointment .view-step-padd .locationDetail .collection-box .address-wrapper .call .value-det {
+  text-decoration: underline;
+}
+.book-appointment .view-step-padd .locationDetail .address-wrapper {
+  padding-top: 20px;
+  border-top: 1px solid var(--light-gray-color-1);
+}
+.book-appointment .view-step-padd .locationDetail .address-wrapper h3 {
+  font-weight: var(--fw600);
+  font-size: var(--f14);
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+.book-appointment .view-step-padd .calander-div.step3-calender {
+  background: var(--light-gray-bg-4);
+  padding: 30px 40px;
+}
+.book-appointment .view-step-padd .calander-div.step3-calender .MuiDateCalendar-root {
+  width: 100%;
+}
+.book-appointment .view-step-padd .calander-div.step3-calender .MuiDateCalendar-root .MuiDayCalendar-header {
+  justify-content: space-between;
+}
+.book-appointment .view-step-padd .calander-div.step3-calender .MuiDateCalendar-root .MuiDayCalendar-header .MuiDayCalendar-weekDayLabel {
+  font-size: var(--f16);
+  font-weight: var(--fw600);
+  width: 100%;
+  color: var(--primary-color);
+}
+.book-appointment .view-step-padd .calander-div.step3-calender .MuiDateCalendar-root .MuiDayCalendar-header .MuiPickersDay-root {
+  color: var(--primary-color);
+}
+.book-appointment .view-step-padd .calander-div.step3-calender .MuiDateCalendar-root .MuiDayCalendar-header .MuiPickersDay-root:not(.Mui-selected) {
+  border: 2px solid var(--dark-blue-color);
+}
+.book-appointment .view-step-padd .calander-div.step3-calender .MuiDateCalendar-root .MuiButtonBase-root .MuiPickersDay-root.Mui-selected {
+  border: 2px solid var(--dark-blue-color);
+}
+.book-appointment .view-step-padd .calander-div.step3-calender .MuiDateCalendar-root .MuiDayCalendar-slideTransition {
+  min-height: 290px;
+}
+.book-appointment .view-step-padd .calander-div.step3-calender .MuiDateCalendar-root .MuiDayCalendar-slideTransition .MuiDayCalendar-weekContainer {
+  justify-content: space-between;
+}
+.book-appointment .view-step-padd .calander-div.step3-calender .MuiDateCalendar-root .MuiDayCalendar-slideTransition .MuiDayCalendar-weekContainer .MuiPickersDay-root {
+  width: 100%;
+  border-radius: 0%;
+  font-size: var(--f16);
+  font-weight: var(--fw600);
+  height: 44px;
+}
+.book-appointment .view-step-padd .calander-div.step3-calender .MuiDateCalendar-root .MuiDayCalendar-slideTransition .MuiDayCalendar-weekContainer.MuiPickersDay-today {
+  border-radius: 0%;
+}
+.book-appointment .view-step-padd .calander-div.step3-calender .MuiDateCalendar-root .MuiDayCalendar-slideTransition .MuiDayCalendar-weekContainer .Mui-selected {
+  background-color: var(--dark-blue-color);
+}
+.book-appointment .view-step-padd .calander-div.step3-calender .MuiDateCalendar-root .MuiDayCalendar-slideTransition .MuiDayCalendar-weekContainer .MuiPickersDay-dayOutsideMonth {
+  background-color: var(--dark-gray-color);
+}
+.book-appointment .view-step-padd .calander-div.step3-calender .MuiDateCalendar-root .MuiDayCalendar-slideTransition .MuiDayCalendar-weekContainer .Mui-disabled {
+  cursor: not-allowed;
+}
+@media (max-width: 992px) {
+  .book-appointment .view-step-padd .calander-div.step3-calender {
+    padding: 15px;
+  }
+}
+body[data-theme=df] .book-appointment .view-step-padd .calander-div.step3-calender {
+  background-color: var(--light-bistre-brown);
+}
+.book-appointment .view-step-padd .contact-selection .MuiFormControl-root label {
+  background-color: var(--light-gray-bg-4);
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+body[data-theme=df] .book-appointment .view-step-padd .contact-selection .MuiFormControl-root label {
+  background-color: var(--light-bistre-brown);
+}
+.book-appointment .view-step-padd .contact-selection .MuiFormControl-root {
+  width: 100%;
+}
+.book-appointment .view-step-padd .vaconfirm-inner {
+  background: var(--light-gray-bg-4);
+  padding: 30px 40px;
+  margin: 0px;
+  width: 100%;
+  max-width: 800px;
+}
+@media (max-width: 992px) {
+  .book-appointment .view-step-padd .vaconfirm-inner {
+    padding: 20px;
+  }
+}
+body[data-theme=df] .book-appointment .view-step-padd .vaconfirm-inner {
+  max-width: 100%;
+  background: transparent;
+  padding: 0px;
+}
+body[data-theme=df] .book-appointment .view-step-padd .vaconfirm-inner .va-store-contact-data {
+  background-color: var(--light-bistre-brown);
+  padding: 24px;
+}
+body[data-theme=df] .book-appointment .view-step-padd .vaconfirm-inner .va-store-contact-data .decription-book-confirmation p a {
+  color: var(--bistre-brown);
+  font-weight: var(--fw600);
+}
+.book-appointment .view-step-padd .store-vaimg-block {
+  background-color: var(--dark-gray-color);
+}
+.book-appointment .view-step-padd .store-vaimg-block img {
+  width: 100%;
+  height: 100%;
+}
+.book-appointment .view-step-padd .store-vaimg-block .row {
+  margin: 0px;
+  padding: 10px 5px;
+}
+.book-appointment .view-step-padd .store-vaimg-block .row .timer-label {
+  font-weight: var(--fw600);
+  font-size: var(--f14);
+  line-height: 20px;
+  color: var(--primary-color);
+}
+.book-appointment .view-step-padd .store-vaimg-block .row .timer-label .timer-label-span-block {
+  display: block;
+}
+.book-appointment .view-step-padd .store-vaimg-block .row .timer {
+  color: var(--light-gray-color-1);
+  font-weight: var(--fw600);
+  font-size: var(--f14);
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+}
+.book-appointment .view-step-padd .store-vaimg-block .row .timer .material-icons-outlined {
+  font-size: 20px;
+  margin-right: 6px;
+}
+.book-appointment .view-step-padd .account-sec-step-form {
+  padding-top: 40px;
+}
+.book-appointment .view-step-padd .account-sec-step-form p {
+  font-size: var(--f14);
+}
+.book-appointment .view-step-padd .account-sec-step-form p a {
+  color: var(--light-gray-bg-5);
+  text-decoration: none;
+}
+.book-appointment .view-step-padd .account-sec-step-form .checkbox-text a {
+  color: var(--light-gray-bg-5);
+  text-decoration: none;
+  font-weight: var(--fw600);
+}
+.book-appointment .view-step-padd .va-store-contact-data h5 {
+  font-weight: var(--fw600);
+  font-size: var(--f14);
+  margin-bottom: 4px;
+}
+.book-appointment .view-step-padd .va-store-contact-data p {
+  font-weight: var(--fw400);
+  font-size: var(--f14);
+  margin-bottom: 4px;
+}
+.book-appointment .view-step-padd .va-store-contact-data p.decription-va {
+  border-top: 1px solid #A4AAAE;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+.book-appointment .step-wrapper .c-stepper__title {
+  color: var(--light-gray-color-1);
+  font-weight: var(--fw600);
+  font-size: var(--f14);
+  line-height: 18px;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+.book-appointment .step-wrapper .c-stepper__title span:last-child {
+  text-transform: uppercase;
+}
+@media (max-width: 992px) {
+  .book-appointment .step-wrapper .c-stepper__title span {
+    display: none;
+  }
+}
+.book-appointment .step-wrapper .c-stepper__title span.material-icons-outlined {
+  margin-right: 12px;
+  display: block;
+}
+@media (max-width: 992px) {
+  .book-appointment .step-wrapper .c-stepper__title span.material-icons-outlined {
+    margin-right: 0;
+  }
+}
+.book-appointment .step-wrapper li.c-stepper__item.active .c-stepper__title {
+  color: var(--primary-color);
+}
+.book-appointment .virtual-appointment-section .expert-wrapper {
+  flex-direction: row-reverse;
+}
+.book-appointment .time-wrapper {
+  background: var(--light-gray-bg-4);
+  padding: 30px 40px;
+}
+body[data-theme=df] .book-appointment .time-wrapper {
+  background-color: var(--light-bistre-brown);
+}
+.book-appointment .time-wrapper h3 {
+  font-weight: var(--fw600);
+  font-size: var(--f16);
+  line-height: 23px;
+  color: var(--primary-color);
+  text-align: center;
+}
+.book-appointment .time-wrapper .time-option {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 270px;
+  margin: 0px -12px;
+}
+@media (max-width: 599px) {
+  .book-appointment .time-wrapper .time-option {
+    margin: 0px;
+  }
+}
+.book-appointment .time-wrapper .time-option .time-options-blocks {
+  width: 33.3%;
+  padding: 0px 6px;
+}
+@media (max-width: 599px) {
+  .book-appointment .time-wrapper .time-option .time-options-blocks {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+}
+.book-appointment .time-wrapper .time-option .time-options-blocks .option-selections {
+  border: 1px solid var(--primary-color);
+  padding: 12px;
+  margin-bottom: 8px;
+  font-weight: var(--fw600);
+  font-size: var(--f14);
+  line-height: 20px;
+  color: var(--primary-color);
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-right: 0px;
+  white-space: nowrap;
+}
+.book-appointment .time-wrapper .time-option .time-options-blocks .option-selections:not(.active):hover {
+  background: var(--brand-light-color);
+}
+.book-appointment .time-wrapper .time-option .time-options-blocks .option-selections:nth-child(2n) {
+  margin-right: 0px;
+}
+.book-appointment .time-wrapper .time-option .time-options-blocks .option-selections.active {
+  background: var(--dark-blue-color);
+  border: 1px solid var(--dark-gray-color-2);
+  color: var(--white-color);
+}
+body[data-theme=df] .book-appointment .time-wrapper .time-option .time-options-blocks .option-selections {
+  background-color: transparent;
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+body[data-theme=df] .book-appointment .time-wrapper .time-option .time-options-blocks .option-selections.active, body[data-theme=df] .book-appointment .time-wrapper .time-option .time-options-blocks .option-selections:hover {
+  background-color: var(--bistre-brown);
+  color: var(--white-color);
+  border-color: var(--bistre-brown);
+}
+.book-appointment .time-wrapper .time-option .time-options-blocks .filled-chip {
+  position: absolute;
+  top: -12px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.book-appointment .time-wrapper.select-store .option-selections.active {
+  background: var(--dark-gray-color-2);
+  border: 1px solid var(--dark-gray-color-2);
+  color: var(--white-color);
+}
+@media (max-width: 992px) {
+  .book-appointment .time-wrapper {
+    margin-bottom: 25px;
+    padding: 15px;
+  }
+}
+.book-appointment .locationDetail {
+  background: var(--light-gray-bg-4);
+  padding: 30px 22px !important;
+  height: 100%;
+}
+body[data-theme=df] .book-appointment .locationDetail {
+  background-color: var(--light-bistre-brown);
+}
+.book-appointment .locationDetail .store-address-wrap p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+@media (max-width: 992px) {
+  .book-appointment .locationDetail .store-address-wrap p {
+    justify-content: center;
+  }
+}
+.book-appointment .locationDetail .store-address-wrap p a {
+  display: flex;
+  align-items: center;
+}
+.book-appointment .locationDetail .store-address-wrap p a img {
+  padding-bottom: 0px;
+  margin-right: 10px;
+}
+.book-appointment .locationDetail .store-address-wrap p a .underline {
+  text-decoration: underline;
+}
+.book-appointment .locationDetail .store-address-wrap p .material-icons-outlined {
+  margin-right: 8px;
+}
+.book-appointment .locationDetail h3 {
+  font-weight: var(--fw600);
+  font-size: var(--f14);
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+.book-appointment .locationDetail img {
+  padding-bottom: 1rem;
+}
+.book-appointment .locationDetail .location-contact {
+  padding-top: 16px;
+}
+.book-appointment .locationDetail p {
+  font-weight: var(--fw600);
+  font-size: var(--f14);
+  line-height: 18px;
+  color: var(--primary-color);
+  margin-bottom: 18px;
+}
+@media (max-width: 992px) {
+  .book-appointment .locationDetail {
+    padding: 15px;
+  }
+}
+.book-appointment .calander-wrapper {
+  background: var(--white-color);
+  height: 100%;
+}
+.book-appointment .calander-wrapper .calander-box {
+  background: var(--light-gray-bg-4);
+  padding: 20px 40px;
+}
+.book-appointment .calander-wrapper .calander-box .MuiPickersCalendarHeader-root {
+  position: relative;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+.book-appointment .calander-wrapper .calander-box .MuiPickersCalendarHeader-root .MuiPickersCalendarHeader-labelContainer {
+  left: 14px;
+  position: absolute;
+}
+.book-appointment .calander-wrapper .calander-box .MuiPickersCalendarHeader-root .MuiPickersArrowSwitcher-root {
+  position: absolute;
+  width: 100%;
+}
+.book-appointment .calander-wrapper .calander-box .MuiPickersCalendarHeader-root .MuiPickersArrowSwitcher-root button {
+  position: absolute;
+  top: -17px;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--primary-color);
+}
+.book-appointment .calander-wrapper .calander-box .MuiPickersCalendarHeader-root .MuiPickersArrowSwitcher-root button:first-child {
+  left: 0;
+}
+.book-appointment .calander-wrapper .calander-box .MuiPickersCalendarHeader-root .MuiPickersArrowSwitcher-root button:last-child {
+  right: 6px;
+}
+.book-appointment .calander-wrapper .account-sec form {
+  max-width: 100%;
+}
+.book-appointment .calander-wrapper .account-sec form .MuiTextField-root {
+  width: 100%;
+}
+.book-appointment .calander-wrapper .time-wrapper .time-option {
+  overflow: auto;
+}
+@media (max-width: 599px) {
+  .book-appointment .calander-wrapper .time-wrapper .time-option .time-options-blocks {
+    margin-bottom: 0px;
+  }
+}
+@media (max-width: 992px) {
+  .book-appointment .appointment-form .m-order-1 {
+    order: 1;
+  }
+}
+@media (max-width: 992px) {
+  .book-appointment .appointment-form .m-order-2 {
+    order: 2;
+  }
+}
+.book-appointment .appointment-form .account-sec {
+  padding: 30px 40px;
+  height: 100%;
+}
+@media (max-width: 992px) {
+  .book-appointment .appointment-form .account-sec {
+    padding: 0 15px;
+  }
+}
+body[data-theme=df] .book-appointment .appointment-form .account-sec p {
+  color: var(--black-color);
+}
+.book-appointment .appointment-form .account-sec a {
+  color: var(--light-gray-bg-5);
+  text-decoration: none;
+}
+body[data-theme=df] .book-appointment .appointment-form .account-sec a {
+  color: var(--black-color);
+  text-decoration: underline;
+}
+.book-appointment .appointment-form .appointment-schedule {
+  background: var(--light-gray-bg-4);
+  padding: 24px;
+}
+body[data-theme=df] .book-appointment .appointment-form .appointment-schedule {
+  background-color: var(--light-bistre-brown);
+}
+@media (max-width: 992px) {
+  .book-appointment .appointment-form .appointment-schedule .m-order-1 {
+    order: 1;
+  }
+}
+@media (max-width: 992px) {
+  .book-appointment .appointment-form .appointment-schedule .m-order-2 {
+    order: 1;
+  }
+}
+.book-appointment .appointment-form .appointment-schedule .locationDetail {
+  padding: 0;
+}
+body[data-theme=df] .book-appointment .appointment-form .appointment-schedule .locationDetail {
+  background: transparent;
+}
+.book-appointment .appointment-form .appointment-schedule .locationDetail .collection-box {
+  background: var(--dark-gray-color);
+  padding: 24px 10px;
+  font-weight: var(--fw600);
+  font-size: var(--f14);
+  line-height: 20px;
+  color: var(--primary-color);
+  margin-bottom: 14px;
+}
+body[data-theme=df] .book-appointment .appointment-form .appointment-schedule .locationDetail .collection-box {
+  background: var(--bistre-brown);
+}
+body[data-theme=df] .book-appointment .appointment-form .appointment-schedule .locationDetail .collection-box .timer-label,
+body[data-theme=df] .book-appointment .appointment-form .appointment-schedule .locationDetail .collection-box .timer,
+body[data-theme=df] .book-appointment .appointment-form .appointment-schedule .locationDetail .collection-box .col-6 {
+  color: var(--white-color);
+}
+.book-appointment .appointment-form .appointment-schedule .locationDetail .collection-box .timer {
+  color: var(--light-gray-color-1);
+  font-weight: var(--fw600);
+  font-size: var(--f14);
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+}
+.book-appointment .appointment-form .appointment-schedule .locationDetail .collection-box .timer .material-icons-outlined {
+  margin-right: 6px;
+}
+.book-appointment .appointment-form .appointment-schedule .locationDetail .collection-box .timer-label {
+  margin-bottom: 10px;
+}
+.book-appointment .appointment-form .appointment-schedule .locationDetail .collection-box .address-wrapper {
+  border-bottom: 1px solid var(--light-gray-color-1);
+  margin-top: 20px;
+  padding-top: 20px;
+}
+body[data-theme=df] .book-appointment .appointment-form .appointment-schedule .locationDetail .collection-box .address-wrapper {
+  border: none;
+}
+.book-appointment .appointment-form .appointment-schedule .locationDetail .collection-box .address-wrapper h3 {
+  font-weight: var(--fw600);
+  font-size: var(--f14);
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+body[data-theme=df] .book-appointment .appointment-form .appointment-schedule .locationDetail .collection-box .address-wrapper p {
+  font-weight: 800;
+}
+body[data-theme=df] .book-appointment .appointment-form .appointment-schedule .locationDetail .collection-box .address-wrapper .whatsapp .value-det,
+body[data-theme=df] .book-appointment .appointment-form .appointment-schedule .locationDetail .collection-box .address-wrapper .call .value-det {
+  text-decoration: underline;
+}
+.book-appointment .appointment-form .appointment-schedule .locationDetail .address-wrapper {
+  padding-top: 20px;
+  border-top: 1px solid var(--light-gray-color-1);
+}
+@media (max-width: 992px) {
+  .book-appointment .appointment-form .appointment-schedule {
+    padding: 15px;
+  }
+}
+@media (max-width: 992px) {
+  .book-appointment .virtual-featured-card .choose-logo {
+    max-width: 106px !important;
+    padding: 0;
+  }
+}
+.book-appointment .features-card .create-design-section .choose-section .choose-section-thumb {
+  align-items: center;
+}
+.book-appointment .features-card .create-design-section .choose-section .choose-section-thumb.virtual-box {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.book-appointment .features-card .create-design-section .choose-section .choose-section-thumb.virtual-box .virtual-content {
+  padding: 12px 20px 19px 20px;
+  justify-content: space-between;
+}
+@media (max-width: 992px) {
+  .book-appointment .features-card .create-design-section .choose-section .choose-section-thumb.virtual-box .virtual-content {
+    align-items: flex-start !important;
+    padding: 10px 8px !important;
+    flex-direction: column;
+  }
+}
+.book-appointment .features-card .create-design-section .choose-section .choose-section-thumb.virtual-box .virtual-content:first-child {
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .book-appointment .features-card .create-design-section .choose-section .choose-section-thumb.virtual-box .virtual-content .choose-details {
+    text-align: left;
+  }
+}
+.book-appointment .features-card .create-design-section .choose-section .choose-section-thumb.virtual-box .virtual-content .choose-details h5 {
+  margin-bottom: 8px;
+  font-size: var(--f14);
+}
+.book-appointment .features-card .create-design-section .choose-section .choose-section-thumb.virtual-box .virtual-content .choose-details p {
+  font-size: var(--f12);
+}
+@media (max-width: 992px) {
+  .book-appointment .features-card .create-design-section .choose-section .choose-section-thumb.virtual-box .virtual-content .choose-details p {
+    margin-bottom: 15px;
+  }
+}
+.book-appointment .features-card .create-design-section .choose-section .choose-section-thumb.virtual-box .virtual-content .appointment-time {
+  font-weight: var(--fw600);
+  font-size: var(--f12);
+  line-height: 18px;
+  width: -webkit-fill-available;
+  max-width: 84px;
+}
+body[data-theme=df] .book-appointment .features-card .create-design-section .choose-section .choose-section-thumb.virtual-box .virtual-content .appointment-time {
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  max-width: fit-content;
+}
+@media (max-width: 992px) {
+  .book-appointment .features-card .create-design-section .choose-section .choose-section-thumb.virtual-box .virtual-content .appointment-time {
+    margin-left: 0 !important;
+    align-items: center;
+    padding: 6px 8px;
+    font-weight: var(--fw600);
+    font-size: var(--f12);
+    line-height: 15px;
+  }
+}
+.book-appointment .features-card .create-design-section .choose-section .choose-section-thumb.virtual-box .virtual-content .appointment-time .material-icons-outlined {
+  font-size: var(--f16);
+}
+@media (max-width: 992px) {
+  .book-appointment .features-card .create-design-section .choose-section .choose-section-thumb.virtual-box .virtual-content .appointment-time .material-icons-outlined {
+    font-weight: var(--fw600);
+    font-size: var(--f12);
+    line-height: 15px;
+  }
+}
+body[data-theme=df] .book-appointment .features-card .create-design-section .choose-section .choose-section-thumb.virtual-box {
+  background-color: var(--light-bistre-brown);
+}
+.book-appointment .features-card .create-design-section .choose-section .choose-section-thumb .choose-logo {
+  height: 100%;
+  max-width: 160px;
+}
+@media (max-width: 992px) {
+  .book-appointment .features-card .create-design-section .choose-section .choose-section-thumb .choose-logo img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media (max-width: 992px) {
+  .book-appointment .features-card .create-design-section .choose-section .choose-section-thumb .choose-logo {
+    padding-bottom: 0px;
+  }
+}
+.book-appointment .features-card .create-design-section .choose-section .select-card {
+  border: 1px black solid;
+}
+body[data-theme=df] .book-appointment .features-card .create-design-section .choose-section .select-card {
+  border-color: var(--bistre-brown);
+}
+.book-appointment .thanku-container .heading {
+  text-align: center;
+  margin-top: 0px;
+}
+body[data-theme=df] .book-appointment .thanku-container {
+  background-color: var(--light-bistre-brown);
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 30px 0px;
+}
+@media (max-width: 992px) {
+  body[data-theme=df] .book-appointment .thanku-container {
+    padding: 15px;
+  }
+}
+body[data-theme=df] .book-appointment .thanku-container h1.heading {
+  margin-top: 0px;
+  font-size: var(--f48);
+}
+@media (max-width: 992px) {
+  body[data-theme=df] .book-appointment .thanku-container h1.heading {
+    font-size: var(--f24);
+    line-height: normal;
+  }
+}
+body[data-theme=df] .book-appointment .thanku-container .order-text-contianer {
+  background: transparent;
+  padding-top: 0px;
+  margin-top: 25px;
+  padding-bottom: 10px;
+}
+@media (max-width: 992px) {
+  body[data-theme=df] .book-appointment .thanku-container .order-text-contianer h4 {
+    font-size: var(--f16) !important;
+    line-height: normal;
+  }
+}
+body[data-theme=df] .book-appointment .MuiDateCalendar-root .MuiDayCalendar-slideTransition .MuiDayCalendar-weekContainer .MuiPickersDay-root {
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+body[data-theme=df] .book-appointment .MuiDateCalendar-root .MuiDayCalendar-slideTransition .MuiDayCalendar-weekContainer .MuiPickersDay-root:hover {
+  opacity: 0.8;
+}
+body[data-theme=df] .book-appointment .MuiDateCalendar-root .MuiDayCalendar-slideTransition .MuiDayCalendar-weekContainer .MuiPickersDay-root.MuiPickersDay-today, body[data-theme=df] .book-appointment .MuiDateCalendar-root .MuiDayCalendar-slideTransition .MuiDayCalendar-weekContainer .MuiPickersDay-root.Mui-selected {
+  background-color: var(--bistre-brown);
+  border-color: var(--bistre-brown);
+  color: var(--white-color);
+}
+body[data-theme=df] .book-appointment .MuiDateCalendar-root .MuiDayCalendar-slideTransition .MuiDayCalendar-weekContainer .MuiPickersDay-root.MuiPickersDay-dayOutsideMonth {
+  background-color: var(--bistre-brown-light1);
+  color: var(--white-color);
+}
+.book-appointment .appointment_type-form-sec .appointment-type-box {
+  display: flex;
+  cursor: pointer;
+}
+body[data-theme=df] .book-appointment .appointment_type-form-sec .appointment-type-box {
+  background-color: var(--light-bistre-brown);
+}
+body[data-theme=ab] .book-appointment .appointment_type-form-sec .appointment-type-box {
+  background-color: var(--alice-blue-color);
+}
+.book-appointment .appointment_type-form-sec .appointment-type-box .appointment-type-img {
+  width: 30%;
+  margin-right: 15px;
+}
+.book-appointment .appointment_type-form-sec .appointment-type-box .appointment-type-img img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+.book-appointment .appointment_type-form-sec .appointment-type-box .appointment-type-cntnt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.book-appointment .appointment_type-form-sec .appointment-type-box .appointment-type-cntnt h4 {
+  font-size: var(--f16);
+  font-weight: var(--fw600);
+}
+.book-appointment .appointment_type-form-sec .appointment-type-box .appointment-type-cntnt p {
+  margin-bottom: 0px;
+  font-size: var(--f14);
+  font-weight: var(--fw400);
+  line-height: 20px;
+}
+body[data-theme=df] .book-appointment .appointment_type-form-sec .appointment-type-box.card-active {
+  border: 1px solid var(--bistre-brown);
+}
+body[data-theme=ab] .book-appointment .appointment_type-form-sec .appointment-type-box.card-active {
+  border: 1px solid var(--brand-color);
+}
+@media (max-width: 992px) {
+  .book-appointment .appointment_type-form-sec .appointment-type-box {
+    margin-bottom: 20px;
+  }
+}
+.book-appointment .step-mobile-title {
+  display: none;
+}
+@media (max-width: 992px) {
+  .book-appointment .step-mobile-title {
+    display: block;
+  }
+  .book-appointment .step-mobile-title h5 {
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+.book-appointment .filled-chip {
+  background: var(--dark-gray-color);
+  height: 23px;
+  border-radius: 0px;
+}
+.book-appointment .filled-chip span {
+  color: var(--primary-color);
+  font-size: var(--f12);
+  font-weight: 600;
+  padding-left: 7px;
+  padding-right: 7px;
+}

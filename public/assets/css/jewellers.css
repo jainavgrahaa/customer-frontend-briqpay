@@ -1,0 +1,12 @@
+/* Variables */
+/* Variables */
+/* exports */
+:export {
+  brandColor: #121213;
+  defaultFont: "Plus Jakarta Sans", sans-serif;
+}
+
+/* Media Mixins */
+.h1 {
+  color: red !important;
+}

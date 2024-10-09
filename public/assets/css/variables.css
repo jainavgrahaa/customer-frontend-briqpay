@@ -1,0 +1,7 @@
+/* Variables */
+/* Variables */
+/* exports */
+:export {
+  brandColor: var(--brand-color);
+  defaultFont: var(--plus-jakarta-sans);
+}

@@ -1,0 +1,48 @@
+@import './variables.scss','./theme/df.scss', './mixins.scss';
+[data-theme="df"] {
+  .offer-table-heading{
+    h4{
+        font-size: 24px;
+        font-weight: var(--fw400);
+        margin-bottom: 20px;
+    }
+    p{
+        a{
+            text-decoration: underline;
+        }
+    }
+  }
+  .df-table-design{
+    box-shadow: none;
+    table{
+    thead{
+        th{
+            background: var(--bistre-brown);
+            color: var(--brand-light-color);
+            text-align: center;
+            border-color: var(--bistre-brown);
+            &:first-child{
+                text-align: left;
+            }
+        }
+    }
+    tbody{
+        tr{
+            th{
+                &:first-child{
+                    background: var(--bistre-brown);
+                    color: var(--brand-light-color);
+                    border-color: var(--bistre-brown);
+                    text-align: left;
+                }
+            }
+            td{
+                color: var(--brand-color);
+                border: 1px solid var(--light-brown-4);
+                text-align: center;
+            }
+        }
+    }
+  }
+}
+}

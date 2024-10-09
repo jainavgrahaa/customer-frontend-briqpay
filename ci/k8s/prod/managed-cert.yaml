@@ -1,0 +1,41 @@
+apiVersion: networking.gke.io/v1
+kind: ManagedCertificate
+metadata:
+  name: nj-customer-ui-cert
+spec:
+  domains:
+  - prod.nj.nvizion.io
+  - prod-df.nj.nvizion.io
+  - staging.nj.nvizion.io
+  - staging-qa.nj.nvizion.io
+  - staging-df.nj.nvizion.io
+  - uat.nj.nvizion.io
+  - uat-qa.nj.nvizion.io
+  - uat-df.nj.nvizion.io
+  - dev.nj.nvizion.io
+  - dev-qa.nj.nvizion.io
+  - dev-df.nj.nvizion.io
+  - prod-uk.nj.nvizion.io
+  - uat-uk.nj.nvizion.io
+  - staging-uk.nj.nvizion.io
+  - prod-ie.nj.nvizion.io
+  - uat-ie.nj.nvizion.io
+  - staging-ie.nj.nvizion.io
+  - prod-df-uk.nj.nvizion.io
+  - uat-df-uk.nj.nvizion.io
+  - staging-df-uk.nj.nvizion.io
+  - prod-df-us.nj.nvizion.io
+  - uat-df-us.nj.nvizion.io
+  - staging-df-us.nj.nvizion.io
+  - prod-df-ie.nj.nvizion.io
+  - uat-df-ie.nj.nvizion.io
+  - staging-df-ie.nj.nvizion.io
+  - gpim.nj.nvizion.io
+  - gpim-df.nj.nvizion.io
+  - gpim-qa.nj.nvizion.io
+  - gpim-uk.nj.nvizion.io
+  - gpim-ie.nj.nvizion.io
+  - gpim-df-uk.nj.nvizion.io
+  - gpim-df-us.nj.nvizion.io
+  - gpim-df-ie.nj.nvizion.io
+  - gpim-df-fr.nj.nvizion.io

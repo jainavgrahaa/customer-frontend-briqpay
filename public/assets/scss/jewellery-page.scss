@@ -1,0 +1,421 @@
+@import "./variables.scss", "./mixins.scss", "./theme/index.scss";
+
+
+.jewellery-page-wrapper {
+    background-color: red;
+    .main-banner {
+        .banner-content {
+            margin: 0;
+        }
+    }
+
+    .white-content {
+        .main-banner {
+            .banner-wrap {
+                @include for-tablet-landscape-2 {
+                    flex-direction: column;
+                }
+            }
+
+            .banner-content {
+                backdrop-filter: blur(0px);
+
+                .heading {
+                    color: var(--white-color);
+                    font-size: var(--f48);
+                    font-weight: var(--fw400);
+
+                    @include for-tablet-landscape-2 {
+                        font-weight: var(--fw400);
+                        font-size: var(--f36);
+                    }
+
+                    span {
+                        font-style: italic;
+
+                        @include for-tablet-landscape-2 {
+                            font-weight: var(--fw400);
+                        }
+                    }
+
+                    p {
+                        font-size: var(--f16);
+                        line-height: 22px;
+                        font-weight: var(--fw400);
+                        letter-spacing: normal;
+                    }
+                }
+
+                .banner-desc {
+                    p {
+                        color: var(--white-color);
+                    }
+                }
+
+
+                a.btn-link-primary {
+                    color: var(--white-color);
+                    border: 1px solid var(--white-color);
+
+                    @include for-tablet-landscape-2 {
+                        width: 70%;
+                        margin: auto;
+                    }
+                }
+
+                @include for-tablet-landscape-2 {
+                    background: linear-gradient(#0e2336, #091e31);
+                    text-align: center;
+                    margin-bottom: -60px;
+                }
+            }
+        }
+    }
+
+    .jewellery-page-faq {
+        background: transparent;
+        padding: 0;
+        min-height: auto;
+
+        .col-lg-6 {
+            padding-top: 0 !important;
+        }
+
+        .banner-wrap {
+            .banner-content {
+                h1 {
+                    color: var(--primary-color);
+                }
+            }
+        }
+    }
+
+    .jewellery-page-faq {
+        .faq-page-data {
+            .faq-sec {
+                padding: 20px 0 0px !important;
+
+                @include for-tablet-landscape-2 {
+                    padding: 20px 10px 0px;
+                }
+            }
+
+            .faq-help-box {
+                flex-direction: column;
+                padding: 80px 20px;
+                gap: 20px;
+            }
+
+            .faq-contact-detail {
+                .email-detail {
+                    text-decoration: underline;
+                }
+            }
+
+            .wrap {
+                .accordion-wrap {
+                    .wrapIn {
+                        h2 {
+                            display: none;
+                        }
+
+                        &:nth-child(2) {
+                            display: none;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    .shopbycategori {
+        padding: 20px 0;
+
+
+        @include for-tablet-landscape-2 {
+            padding: 30px 18px;
+        }
+
+        .first-col {
+            h1 {
+                margin-bottom: 85px;
+                font-size: var(--f64);
+                font-weight: var(--fw400);
+                font-style: var(--playfair-display);
+
+                @include for-tablet-landscape-2 {
+                    font-size: var(--f48);
+                    margin-bottom: 20px;
+                }
+
+                span {
+                    font-style: italic;
+                }
+            }
+
+            .row {
+                display: flex;
+                align-items: end;
+                height: auto;
+
+                @include for-tablet-landscape-2 {
+                    height: auto;
+                }
+            }
+
+            .col-data {
+                display: flex;
+                position: relative;
+
+                @include for-tablet-landscape-2 {
+                    width: 49%;
+                    padding: 5px;
+                }
+
+                a {
+                    position: absolute;
+                    bottom: 10%;
+                    left: 34%;
+                    color: var(--white-color);
+                    font-size: var(--f18);
+                    line-height: 22px;
+                    font-weight: var(--fw600);
+
+                    @include for-tablet-landscape-2 {
+                        font-size: var(--f16);
+                        left: 28%;
+                    }
+
+                    .material-icons-outlined {
+                        position: absolute;
+                    }
+                }
+            }
+        }
+
+        .second-col {
+            position: relative;
+
+            img {
+                height: 500px;
+                width: 100vw;
+
+                @media(max-width:767px) {
+                    height: auto;
+                }
+            }
+
+            a {
+                position: absolute;
+                bottom: 7%;
+                left: 42%;
+                color: var(--white-color);
+                font-size: var(--f18);
+                line-height: 22px;
+                font-weight: var(--fw600);
+
+                @include for-tablet-landscape-2 {
+                    font-size: var(--f16);
+                    left: 40%;
+                }
+
+                .material-icons-outlined {
+                    position: absolute;
+                }
+            }
+        }
+    }
+
+    .middle-arrow-slider {
+        .thumbslider-section {
+            &.theme-01 {
+                .thumbslider-header {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .thumbslider-section {
+        &.theme-01 {
+            .thumbslider-header {
+                display: block;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 40px;
+
+                @include for-tablet-landscape-2 {
+                    margin-bottom: 0px;
+                }
+
+
+                .sect-title-clm {
+                    a {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .shop-by-price-sec {
+        .thumbslider-header {
+            .sect-title {
+                padding-top: 30px;
+
+                @include for-tablet-landscape-2 {
+                    padding-top: 20px;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+
+    .middle-arrow-slider {
+        position: relative;
+
+        .shop-by-price-sec {
+            .container {
+                overflow: hidden;
+
+                .thumbslider-header {
+                    .thumbslider-controls {
+                        div {
+                            &:nth-child(1) {
+                                position: absolute;
+                                left: 0px;
+                                top: 35%;
+                                border: none;
+                                z-index: 99;
+                            }
+
+                            &:nth-child(2) {
+                                position: absolute;
+                                right: 0px;
+                                top: 35%;
+                                border: none;
+                                z-index: 99;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .our-promise-main-sec {
+        .heading {
+            margin-bottom: 0;
+
+            @include for-tablet-landscape-2 {
+                padding: 0 40px;
+            }
+        }
+
+        .our-promise-sec {
+            text-align: center;
+            margin-bottom: 40px;
+
+            @include for-tablet-landscape-2 {
+                padding: 0 20px;
+            }
+
+            .rating-content {
+                .thumbslider-section {
+                    padding: 0;
+
+                    p {
+                        font-size: var(--f14);
+                    }
+                }
+            }
+        }
+    }
+
+    .rating-sec {
+        padding: 20px 0;
+
+        @include for-tablet-landscape-2 {
+            margin-bottom: 55px;
+        }
+
+        .thumbslider-section {
+            padding: 30px 20px;
+
+            @include for-tablet-landscape-2 {
+                padding: 0;
+            }
+        }
+    }
+}
+
+.jewellery-page-wrapper .special-features-container {
+    justify-content: space-around;
+    padding: 20px 50px;
+
+    @include for-tablet-landscape-2 {
+        padding: 20px 18px 35px;
+    }
+}
+
+.jewellery-page-wrapper .customize-resize {
+    margin-bottom: 30px;
+}
+
+.jewellery-page-wrapper {
+    .card-with-text {
+        img {
+            @include for-tablet-landscape-2 {
+                max-height: 250px;
+            }
+        }
+    }
+
+    .card-label-text {
+        p {
+            font-size: var(--f48);
+            font-weight: var(--fw400);
+            color: var(--white-color);
+
+            @include for-tablet-landscape-2 {
+                text-align: center;
+                font-size: var(--f36);
+            }
+        }
+    }
+
+    .jewellery-page-faq {
+        .faq-page-data {
+            .container>.row>div+div {
+                padding-top: 0px;
+            }
+
+        }
+    }
+
+    .main-banner {
+        .banner-content {
+            .heading {
+                @include for-tablet-landscape-2 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .special-features-container {
+        justify-content: space-around;
+        padding: 20px 50px;
+
+        @include for-tablet-landscape-2 {
+            display: block;
+            padding: 20px 0;
+        }
+    }
+
+    .customize-resize {
+        margin-bottom: 30px;
+    }
+}

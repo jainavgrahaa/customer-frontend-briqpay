@@ -1,0 +1,416 @@
+/* Variables */
+/* Variables */
+/* exports */
+:export {
+  brandColor: var(--brand-color);
+  defaultFont: var(--plus-jakarta-sans);
+}
+
+/* Media Mixins */
+:root {
+  --alice-blue-color: #f0f8ff;
+  --brand-color: #121213;
+  --brand-light-color: #fff;
+  --link-color: rgb(13, 98, 255);
+  --link-color-hover: darken(var(--link-color), 10%);
+  --black-color: #000;
+  --black-color-2: #333335;
+  --white-color: #fff;
+  --white-color-2: #F5F5F5;
+  --pista-green: #F3F8F6;
+  --dark-blue-color: #2A3E52;
+  --light-gray-color: #ccc;
+  --light-gray-color-1: #A4AAAE;
+  --light-gray-color-2: #666666;
+  --primary-color: #1d1f1e;
+  --light-gray-bg-1: #dedde0;
+  --light-gray-bg-2: #F0F6FD;
+  --light-gray-bg-3: #D9D9D9;
+  --light-gray-bg-4: #F8F8F8;
+  --light-gray-bg-5: #748DA6;
+  --medium-gray: #aaa;
+  --dark-shade-gray: #222;
+  --light-grayish-blue: #e2e3e4;
+  --lighten-dark-color-50: lighten(var(--black-color), 50%);
+  --lighten-light-color-50: lighten(var(--white-color), 50%);
+  --lighten-transparent-10: fade(var(--white-color), 90%);
+  --pos_absolute: absolute;
+  --dark-gray-color: #DADEE0;
+  --dark-gray-color-2: #2A3E52;
+  --light-blue: #F0F6FD;
+  --orange: #e24b1b;
+  --plate-sliver: #C8C0B3;
+  --modal-bg-color: #1d1f1eb5;
+  --inherit-color: inherit;
+  --light-green-color: #bfb;
+  --light-brown: #BA9659;
+  --light-brown-2: #FFFCF6;
+  --light-brown-3: #957127;
+  --light-brown-4: #F4E8DA;
+  --light-brown-5: #D6BB8F;
+  --light-grey-6: #dadee0;
+  --bistre-brown: #957127;
+  --black-2: #333335;
+  --swiper-theme-color: #2A3E52;
+  --plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
+  --prata-font: "Prata", serif;
+  --playfair-display: "Playfair Display", serif;
+  --fw400: 400;
+  --fw500: 500;
+  --fw600: 600;
+  --fweight700: 700;
+  --default-lg-fontsize: 18px;
+  --default-desktop-fontsize: 14px;
+  --default-mobile-fontsize: 14px;
+  --f10: 0.625rem;
+  --f12: 0.857rem;
+  --f13: 0.929rem;
+  --f14: 1rem;
+  --f15: 1.071rem;
+  --f16: 1.143rem;
+  --f18: 1.286rem;
+  --f20: 1.429rem;
+  --f24: 1.714rem;
+  --f28: 1.75rem;
+  --f30: 2.143rem;
+  --f32: 2rem;
+  /* 32px */
+  --f34: 2.125rem;
+  --f36: 2.571rem;
+  --f40: 2.857rem;
+  --f48: 3.429rem;
+  --f64: 4.571rem;
+  --f80: 5.714rem;
+  --ab-primary-color: #1D1F1E;
+  --Ivy-font: "Ivy Mode";
+  --Libre-franklin: "Libre Franklin", sans-serif;
+  --df-primary-color: #333335;
+  --df-required-tcolor: #E54545;
+}
+
+:export {
+  brandColor: var(--brand-color);
+  defaultFont: var(--plus-jakarta-sans);
+}
+
+.jewellery-page-wrapper {
+  background-color: red;
+}
+.jewellery-page-wrapper .main-banner .banner-content {
+  margin: 0;
+}
+@media (max-width: 992px) {
+  .jewellery-page-wrapper .white-content .main-banner .banner-wrap {
+    flex-direction: column;
+  }
+}
+.jewellery-page-wrapper .white-content .main-banner .banner-content {
+  backdrop-filter: blur(0px);
+}
+.jewellery-page-wrapper .white-content .main-banner .banner-content .heading {
+  color: var(--white-color);
+  font-size: var(--f48);
+  font-weight: var(--fw400);
+}
+@media (max-width: 992px) {
+  .jewellery-page-wrapper .white-content .main-banner .banner-content .heading {
+    font-weight: var(--fw400);
+    font-size: var(--f36);
+  }
+}
+.jewellery-page-wrapper .white-content .main-banner .banner-content .heading span {
+  font-style: italic;
+}
+@media (max-width: 992px) {
+  .jewellery-page-wrapper .white-content .main-banner .banner-content .heading span {
+    font-weight: var(--fw400);
+  }
+}
+.jewellery-page-wrapper .white-content .main-banner .banner-content .heading p {
+  font-size: var(--f16);
+  line-height: 22px;
+  font-weight: var(--fw400);
+  letter-spacing: normal;
+}
+.jewellery-page-wrapper .white-content .main-banner .banner-content .banner-desc p {
+  color: var(--white-color);
+}
+.jewellery-page-wrapper .white-content .main-banner .banner-content a.btn-link-primary {
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
+}
+@media (max-width: 992px) {
+  .jewellery-page-wrapper .white-content .main-banner .banner-content a.btn-link-primary {
+    width: 70%;
+    margin: auto;
+  }
+}
+@media (max-width: 992px) {
+  .jewellery-page-wrapper .white-content .main-banner .banner-content {
+    background: linear-gradient(#0e2336, #091e31);
+    text-align: center;
+    margin-bottom: -60px;
+  }
+}
+.jewellery-page-wrapper .jewellery-page-faq {
+  background: transparent;
+  padding: 0;
+  min-height: auto;
+}
+.jewellery-page-wrapper .jewellery-page-faq .col-lg-6 {
+  padding-top: 0 !important;
+}
+.jewellery-page-wrapper .jewellery-page-faq .banner-wrap .banner-content h1 {
+  color: var(--primary-color);
+}
+.jewellery-page-wrapper .jewellery-page-faq .faq-page-data .faq-sec {
+  padding: 20px 0 0px !important;
+}
+@media (max-width: 992px) {
+  .jewellery-page-wrapper .jewellery-page-faq .faq-page-data .faq-sec {
+    padding: 20px 10px 0px;
+  }
+}
+.jewellery-page-wrapper .jewellery-page-faq .faq-page-data .faq-help-box {
+  flex-direction: column;
+  padding: 80px 20px;
+  gap: 20px;
+}
+.jewellery-page-wrapper .jewellery-page-faq .faq-page-data .faq-contact-detail .email-detail {
+  text-decoration: underline;
+}
+.jewellery-page-wrapper .jewellery-page-faq .faq-page-data .wrap .accordion-wrap .wrapIn h2 {
+  display: none;
+}
+.jewellery-page-wrapper .jewellery-page-faq .faq-page-data .wrap .accordion-wrap .wrapIn:nth-child(2) {
+  display: none;
+}
+.jewellery-page-wrapper .shopbycategori {
+  padding: 20px 0;
+}
+@media (max-width: 992px) {
+  .jewellery-page-wrapper .shopbycategori {
+    padding: 30px 18px;
+  }
+}
+.jewellery-page-wrapper .shopbycategori .first-col h1 {
+  margin-bottom: 85px;
+  font-size: var(--f64);
+  font-weight: var(--fw400);
+  font-style: var(--playfair-display);
+}
+@media (max-width: 992px) {
+  .jewellery-page-wrapper .shopbycategori .first-col h1 {
+    font-size: var(--f48);
+    margin-bottom: 20px;
+  }
+}
+.jewellery-page-wrapper .shopbycategori .first-col h1 span {
+  font-style: italic;
+}
+.jewellery-page-wrapper .shopbycategori .first-col .row {
+  display: flex;
+  align-items: end;
+  height: auto;
+}
+@media (max-width: 992px) {
+  .jewellery-page-wrapper .shopbycategori .first-col .row {
+    height: auto;
+  }
+}
+.jewellery-page-wrapper .shopbycategori .first-col .col-data {
+  display: flex;
+  position: relative;
+}
+@media (max-width: 992px) {
+  .jewellery-page-wrapper .shopbycategori .first-col .col-data {
+    width: 49%;
+    padding: 5px;
+  }
+}
+.jewellery-page-wrapper .shopbycategori .first-col .col-data a {
+  position: absolute;
+  bottom: 10%;
+  left: 34%;
+  color: var(--white-color);
+  font-size: var(--f18);
+  line-height: 22px;
+  font-weight: var(--fw600);
+}
+@media (max-width: 992px) {
+  .jewellery-page-wrapper .shopbycategori .first-col .col-data a {
+    font-size: var(--f16);
+    left: 28%;
+  }
+}
+.jewellery-page-wrapper .shopbycategori .first-col .col-data a .material-icons-outlined {
+  position: absolute;
+}
+.jewellery-page-wrapper .shopbycategori .second-col {
+  position: relative;
+}
+.jewellery-page-wrapper .shopbycategori .second-col img {
+  height: 500px;
+  width: 100vw;
+}
+@media (max-width: 767px) {
+  .jewellery-page-wrapper .shopbycategori .second-col img {
+    height: auto;
+  }
+}
+.jewellery-page-wrapper .shopbycategori .second-col a {
+  position: absolute;
+  bottom: 7%;
+  left: 42%;
+  color: var(--white-color);
+  font-size: var(--f18);
+  line-height: 22px;
+  font-weight: var(--fw600);
+}
+@media (max-width: 992px) {
+  .jewellery-page-wrapper .shopbycategori .second-col a {
+    font-size: var(--f16);
+    left: 40%;
+  }
+}
+.jewellery-page-wrapper .shopbycategori .second-col a .material-icons-outlined {
+  position: absolute;
+}
+.jewellery-page-wrapper .middle-arrow-slider .thumbslider-section.theme-01 .thumbslider-header {
+  margin-bottom: 0;
+}
+.jewellery-page-wrapper .thumbslider-section.theme-01 .thumbslider-header {
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+@media (max-width: 992px) {
+  .jewellery-page-wrapper .thumbslider-section.theme-01 .thumbslider-header {
+    margin-bottom: 0px;
+  }
+}
+.jewellery-page-wrapper .thumbslider-section.theme-01 .thumbslider-header .sect-title-clm a {
+  display: none;
+}
+.jewellery-page-wrapper .shop-by-price-sec .thumbslider-header .sect-title {
+  padding-top: 30px;
+}
+@media (max-width: 992px) {
+  .jewellery-page-wrapper .shop-by-price-sec .thumbslider-header .sect-title {
+    padding-top: 20px;
+    letter-spacing: 1px;
+  }
+}
+.jewellery-page-wrapper .middle-arrow-slider {
+  position: relative;
+}
+.jewellery-page-wrapper .middle-arrow-slider .shop-by-price-sec .container {
+  overflow: hidden;
+}
+.jewellery-page-wrapper .middle-arrow-slider .shop-by-price-sec .container .thumbslider-header .thumbslider-controls div:nth-child(1) {
+  position: absolute;
+  left: 0px;
+  top: 35%;
+  border: none;
+  z-index: 99;
+}
+.jewellery-page-wrapper .middle-arrow-slider .shop-by-price-sec .container .thumbslider-header .thumbslider-controls div:nth-child(2) {
+  position: absolute;
+  right: 0px;
+  top: 35%;
+  border: none;
+  z-index: 99;
+}
+.jewellery-page-wrapper .our-promise-main-sec .heading {
+  margin-bottom: 0;
+}
+@media (max-width: 992px) {
+  .jewellery-page-wrapper .our-promise-main-sec .heading {
+    padding: 0 40px;
+  }
+}
+.jewellery-page-wrapper .our-promise-main-sec .our-promise-sec {
+  text-align: center;
+  margin-bottom: 40px;
+}
+@media (max-width: 992px) {
+  .jewellery-page-wrapper .our-promise-main-sec .our-promise-sec {
+    padding: 0 20px;
+  }
+}
+.jewellery-page-wrapper .our-promise-main-sec .our-promise-sec .rating-content .thumbslider-section {
+  padding: 0;
+}
+.jewellery-page-wrapper .our-promise-main-sec .our-promise-sec .rating-content .thumbslider-section p {
+  font-size: var(--f14);
+}
+.jewellery-page-wrapper .rating-sec {
+  padding: 20px 0;
+}
+@media (max-width: 992px) {
+  .jewellery-page-wrapper .rating-sec {
+    margin-bottom: 55px;
+  }
+}
+.jewellery-page-wrapper .rating-sec .thumbslider-section {
+  padding: 30px 20px;
+}
+@media (max-width: 992px) {
+  .jewellery-page-wrapper .rating-sec .thumbslider-section {
+    padding: 0;
+  }
+}
+
+.jewellery-page-wrapper .special-features-container {
+  justify-content: space-around;
+  padding: 20px 50px;
+}
+@media (max-width: 992px) {
+  .jewellery-page-wrapper .special-features-container {
+    padding: 20px 18px 35px;
+  }
+}
+
+.jewellery-page-wrapper .customize-resize {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 992px) {
+  .jewellery-page-wrapper .card-with-text img {
+    max-height: 250px;
+  }
+}
+.jewellery-page-wrapper .card-label-text p {
+  font-size: var(--f48);
+  font-weight: var(--fw400);
+  color: var(--white-color);
+}
+@media (max-width: 992px) {
+  .jewellery-page-wrapper .card-label-text p {
+    text-align: center;
+    font-size: var(--f36);
+  }
+}
+.jewellery-page-wrapper .jewellery-page-faq .faq-page-data .container > .row > div + div {
+  padding-top: 0px;
+}
+@media (max-width: 992px) {
+  .jewellery-page-wrapper .main-banner .banner-content .heading {
+    text-align: center;
+  }
+}
+.jewellery-page-wrapper .special-features-container {
+  justify-content: space-around;
+  padding: 20px 50px;
+}
+@media (max-width: 992px) {
+  .jewellery-page-wrapper .special-features-container {
+    display: block;
+    padding: 20px 0;
+  }
+}
+.jewellery-page-wrapper .customize-resize {
+  margin-bottom: 30px;
+}

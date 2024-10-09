@@ -1,0 +1,143 @@
+@import './variables.scss', './mixins.scss', './theme/index.scss';
+
+
+.sales-wrapper {
+    .visit-us-sec .visit-over-group {
+        gap: 30px 0;
+    }
+
+    .faq-variants .faq-sec {
+        margin-left: 20px;
+    }
+
+    .card-with-label {
+        .header-text {
+            font-size: var(--f48);
+            font-weight: var(--fw400);
+            color: var(--primary-color);
+            width: 350px;
+            padding-bottom: 35px;
+
+            @include for-tablet-landscape-2 {
+                font-size: var(--f36);
+                padding-bottom: 16px;
+            }
+        }
+    }
+
+    .our-promise-sec .choose-section .choose-section-thumb .choose-details p {
+        @include for-tablet-landscape-2 {
+            padding: 0 20px;
+        }
+    }
+
+    .plus-icon,
+    .minus-icon {
+        color: var(--primary-color);
+    }
+
+    .sales-wrapper .follow-us-sec {
+        @include for-tablet-landscape-2 {
+            padding-top: 0;
+        }
+    }
+
+    .faq-variants .faq-sec {
+        @include for-tablet-landscape-2 {
+            margin-bottom: 0;
+        }
+    }
+
+    .subscription_bar .needsclick {
+        button {
+            @include for-tablet-landscape-2 {
+                border-radius: 0 !important;
+            }
+        }
+    }
+
+    .book-appoint-sec .sec-In .book-app-links>a {
+        @include for-tablet-landscape-2 {
+            align-self: flex-start;
+        }
+    }
+
+    .faq-page {
+        .inner-banner {
+            margin-bottom: 0;
+
+            .banner-content {
+                max-width: 660px;
+
+                p {
+                    a {
+                        margin-top: 20px;
+                        display: block;
+                        text-decoration: underline;
+
+                        @include for-tablet-landscape-2 {
+                            font-weight: var(--fw600);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .thumbslider-section .thumbslider-header .sect-title-clm a {
+        display: none;
+    }
+
+    .newslester-sec {
+        padding: 0px 0;
+    }
+
+    .our-promise-sec {
+        padding: 0px 0 40px;
+    }
+
+    .follow-us-sec {
+        padding-top: 50px;
+    }
+
+    .sect-title-clm {
+        @include for-tablet-landscape-2 {
+            width: 60vw;
+        }
+    }
+
+    .subscription_bar button.needsclick {
+        @include for-tablet-landscape-2 {
+            width: 100%;
+        }
+    }
+
+    .cara-logos {
+        @include for-tablet-landscape-2 {
+            gap: 10px;
+        }
+    }
+
+    .our-promise-sec {
+        h2 {
+            .italic {
+                @include for-tablet-landscape-2 {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .faq-variants h4.heading {
+        @include for-tablet-landscape-2 {
+            padding-top: 50px;
+            margin-bottom: 0;
+        }
+    }
+
+    .sales-wrapper .follow-us-sec {
+        @include for-tablet-landscape-2 {
+            padding-top: 0;
+        }
+    }
+}

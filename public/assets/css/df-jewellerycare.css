@@ -1,0 +1,58 @@
+/* Variables */
+/* Variables */
+/* exports */
+:export {
+  brandColor: var(--brand-color);
+  defaultFont: var(--plus-jakarta-sans);
+}
+
+[data-theme=df] {
+  --bistre-brown: #957127;
+  --bistre-brown-dark: #4B3914;
+  --bistre-brown-light: #BA9659;
+  --bistre-brown-light1: rgba(202, 181, 142,0.5);
+  --dark-300: #858586;
+  --dark-200: #ADADAE;
+  --light-gray-bg-6: #c9c9ca;
+  --light-gray-bg-7: #f5f2ec;
+  --light-bistre-brown: #F8F2E7;
+  --light-gray-bg-2:#FFFFFF;
+  --light-gray-bg-4:#f8f2e7;
+  --light-blue: #f8f2e7;
+  --swiper-theme-color: #957127;
+  --dark400: #090909;
+  --f56: 3.5rem;
+}
+
+/* Media Mixins */
+[data-theme=df] .offer-table-heading h4 {
+  font-size: 24px;
+  font-weight: var(--fw400);
+  margin-bottom: 20px;
+}
+[data-theme=df] .offer-table-heading p a {
+  text-decoration: underline;
+}
+[data-theme=df] .df-table-design {
+  box-shadow: none;
+}
+[data-theme=df] .df-table-design table thead th {
+  background: var(--bistre-brown);
+  color: var(--brand-light-color);
+  text-align: center;
+  border-color: var(--bistre-brown);
+}
+[data-theme=df] .df-table-design table thead th:first-child {
+  text-align: left;
+}
+[data-theme=df] .df-table-design table tbody tr th:first-child {
+  background: var(--bistre-brown);
+  color: var(--brand-light-color);
+  border-color: var(--bistre-brown);
+  text-align: left;
+}
+[data-theme=df] .df-table-design table tbody tr td {
+  color: var(--brand-color);
+  border: 1px solid var(--light-brown-4);
+  text-align: center;
+}

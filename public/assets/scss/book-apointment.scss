@@ -1,0 +1,529 @@
+@import './variables.scss', './mixins.scss', './theme/index.scss';
+
+.bookanapp-wrapper {
+    .exper-book-apointment {
+        @include for-tablet-landscape-2 {
+            margin-bottom: 30px;
+        }
+
+        .expert-wrapper {
+            flex-direction: row-reverse;
+
+            @include for-tablet-landscape-2 {
+                flex-direction: column-reverse;
+            }
+        }
+    }
+
+    .para-width {
+        padding: 0 65px;
+
+        @include for-tablet-landscape-2 {
+            padding: 0 5px;
+        }
+    }
+
+    .btn-outline-primary {
+        text-transform: inherit;
+
+        @include for-tablet-landscape-2 {
+            margin-bottom: 0;
+        }
+    }
+
+    .expert-wrapper .expert-text-wrapper .heading {
+        @include for-tablet-landscape-2 {
+            margin-top: 15px;
+        }
+    }
+
+    .book-appoint-sec {
+        margin-top: 0;
+    }
+
+    .our-promise-sec {
+        @include for-tablet-landscape-2 {
+            padding: 35px 30px 20px;
+        }
+    }
+}
+
+@include for-tablet-landscape-2 {
+    .expert-wrapper .expert-text-wrapper {
+        padding: 60px 15px 44px;
+    }
+
+    .book-appoint-sec {
+        margin-top: 0;
+    }
+
+    .center-text {
+        text-align: center;
+        width: auto;
+        max-width: 40vw;
+        margin: 0 auto;
+        padding: 60px 0;
+        font-size: var(--f16);
+        line-height: 22px;
+        color: var(--primary-color);
+        font-weight: var(--fw400);
+
+        @include for-tablet-landscape-2 {
+            font-size: var(--f14);
+            padding: 30px 0;
+            max-width: initial;
+        }
+
+        .color-text {
+            color: var(--light-gray-bg-5);
+            font-weight: var(--fw400);
+        }
+    }
+
+    .color-box {
+        background: var(--light-gray-bg-2);
+        padding: 60px;
+
+        @include for-tablet-landscape-2 {
+            padding: 20px;
+        }
+
+        h3 {
+            font-size: var(--f24);
+            font-weight: var(--fw600);
+            color: var(--primary-color);
+
+            @include for-tablet-landscape-2 {
+                font-size: var(--f18);
+                margin-bottom: 20px;
+            }
+        }
+
+        p {
+            font-size: var(--f16);
+            font-weight: var(--fw400);
+            color: var(--primary-color);
+        }
+    }
+
+    .two-col-box {
+        margin: 80px 30px 50px;
+
+        @include for-tablet-landscape-2 {
+            margin: 0;
+        }
+
+        h1 {
+            font-size: var(--f48);
+            font-weight: var(--fw400);
+            color: var(--primary-color);
+            width: 500px;
+
+            @include for-tablet-landscape-2 {
+                font-size: var(--f36);
+                margin-top: 50px;
+                width: auto;
+            }
+        }
+
+        p {
+            font-size: var(--f16);
+            font-weight: var(--fw400);
+            color: var(--primary-color);
+
+            @include for-tablet-landscape-2 {
+                font-size: var(--f14);
+            }
+        }
+
+        .two-col-box-btn {
+            font-size: var(--f14);
+            font-weight: var(--fw600);
+            color: var(--primary-color);
+            text-decoration: underline;
+
+            @include for-tablet-landscape-2 {
+                font-weight: var(--fw400);
+                margin-bottom: 20px;
+                display: block;
+            }
+        }
+    }
+
+    .three-box-image {
+        .height-content {
+            height: 330px;
+
+            @include for-tablet-landscape-2 {
+                height: auto;
+            }
+
+            img {
+                @include for-tablet-landscape-2 {
+                    margin-bottom: 20px;
+                    display: block;
+                }
+            }
+
+            .bold-heading {
+                font-size: var(--f18);
+                font-weight: var(--fw600);
+                color: var(--primary-color);
+                margin-bottom: 12px;
+                margin-top: 20px;
+
+                @include for-tablet-landscape-2 {
+                    margin-bottom: 20px;
+                }
+            }
+
+            .text {
+                font-size: var(--f14);
+                font-weight: var(--fw400);
+                color: var(--primary-color);
+                margin-bottom: 14px;
+            }
+        }
+
+        .read-more-btn {
+            font-size: var(--f14);
+            font-weight: var(--fw600);
+            color: var(--primary-color);
+            text-decoration: underline;
+
+            @include for-tablet-landscape-2 {
+                margin-bottom: 20px;
+                display: block;
+            }
+        }
+
+        .color-text-outer {
+            font-size: var(--f14);
+            color: var(--primary-color);
+            font-weight: var(--fw400);
+            text-align: center;
+            padding: 40px 0 40px;
+
+            @include for-tablet-landscape-2 {
+                display: block;
+                margin-bottom: 30px;
+                padding: 40px 10px 40px;
+            }
+
+            .color-text {
+                font-size: var(--f14);
+                color: var(--light-gray-bg-5);
+                font-weight: var(--fw600);
+            }
+        }
+    }
+
+    .fullwidth-color-box {
+        background: var(--light-gray-bg-2);
+        padding: 40px 0;
+
+        .full-box-center-text {
+            text-align: center;
+            width: 850px;
+            margin: 0 auto;
+
+            @include for-tablet-landscape-2 {
+                width: auto;
+            }
+
+            h1 {
+                font-size: var(--f48);
+                font-weight: var(--fw400);
+                color: var(--primary-color);
+                margin-bottom: 20px;
+
+                @include for-tablet-landscape-2 {
+                    font-size: var(--f36);
+                }
+            }
+
+            p {
+                font-size: var(--f16);
+                font-weight: var(--fw400);
+                color: var(--primary-color);
+                padding-right: 18px;
+
+                @include for-tablet-landscape-2 {
+                    font-size: var(--f14);
+                }
+            }
+
+            a {
+                font-size: var(--f14);
+                font-weight: var(--fw600);
+                color: var(--primary-color);
+                text-decoration: underline;
+                margin-bottom: 40px;
+                display: block;
+            }
+        }
+
+        .flex-boxes {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            flex-wrap: wrap;
+
+            .boxes {
+                background: var(--white-color);
+                padding: 20px;
+                width: 240px;
+                height: 170px;
+
+                @include for-tablet-landscape-2 {
+                    background: transparent;
+                    padding: 0;
+                    width: auto;
+                    height: auto;
+                    display: flex;
+                    gap: 10px;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-content: center;
+                    flex-wrap: nowrap;
+                    align-items: center;
+                }
+
+                .numbers {
+                    display: inline-block;
+                    background: var(--light-gray-color);
+                    padding: 9px 16px;
+                    border-radius: 50%;
+                    font-size: var(--f18);
+                    font-weight: var(--fw600);
+                }
+
+                .texts {
+                    font-size: var(--f14);
+                    font-weight: var(--fw400);
+                    color: var(--primary-color);
+                    padding-right: 24px;
+                }
+            }
+        }
+
+        .fullwidth-color-box-center-text {
+            text-align: center;
+            display: block;
+            font-size: var(--f16);
+            font-weight: var(--fw400);
+            margin: 40px 0 50px;
+
+            @include for-tablet-landscape-2 {
+                font-size: var(--f14);
+            }
+        }
+
+        .fullwidth-color-box-btn {
+            text-align: center;
+            display: block;
+            width: auto;
+            max-width: 240px;
+            margin: 0 auto;
+            border: 1px solid var(--primary-color);
+            font-size: var(--f16);
+            font-weight: var(--fw600);
+            padding: 10px;
+
+            @include for-tablet-landscape-2 {
+                max-width: initial;
+            }
+        }
+    }
+
+    .how-to-fing-us {
+        padding-bottom: 60px;
+
+        @include for-tablet-landscape-2 {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+
+        h1 {
+            font-size: var(--f64);
+            font-weight: var(--fw400);
+            color: var(--primary-color);
+            // margin-top: 30px;
+
+            @include for-tablet-landscape-2 {
+                font-size: var(--f48);
+            }
+        }
+
+        p {
+            font-size: var(--f16);
+            font-weight: var(--fw400);
+            color: var(--primary-color);
+            padding: 0 14px 0 0;
+
+            @include for-tablet-landscape-2 {
+                font-size: var(--f14);
+            }
+        }
+
+        a {
+            font-size: var(--f16);
+            font-weight: var(--fw600);
+            color: var(--primary-color);
+            text-decoration: underline;
+
+            @include for-tablet-landscape-2 {
+                margin-bottom: 20px;
+                display: block;
+            }
+        }
+
+        .mob-full-width {
+            @include for-tablet-landscape-2 {
+                padding: 0;
+            }
+        }
+    }
+
+    .faq-page {
+        .inner-banner {
+            // margin-bottom: -60px;
+            height: 340px;
+
+            @include for-tablet-landscape-2 {
+                // margin-bottom: -30px;
+                // margin-bottom: -30px;
+                height: auto;
+            }
+
+            .banner-content {
+                flex-direction: column;
+                display: flex;
+                gap: 12px;
+
+                @include for-tablet-landscape-2 {
+                    padding: 0;
+                }
+
+                .heading {
+                    @include for-tablet-landscape-2 {
+                        margin-bottom: 0;
+                    }
+                }
+
+                .banner-desc {
+                    @include for-tablet-landscape-2 {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+
+        .faq-variants {
+            .about-us-block {
+                @include for-tablet-landscape-2 {
+                    padding-top: 0px;
+                }
+            }
+
+            .faq-sec {
+                @include for-tablet-landscape-2 {
+                    padding: 0px;
+                    margin-top: 0px;
+                }
+            }
+        }
+    }
+
+    .find-us {
+        background: var(--light-gray-bg-4);
+        padding: 30px;
+        margin-bottom: 60px;
+
+        @include for-tablet-landscape-2 {
+            padding: 0;
+        }
+
+        .find-us-inner {
+            .find-us-img {
+                height: 370px;
+
+                @include for-tablet-landscape-2 {
+                    height: auto;
+                }
+            }
+        }
+
+        .right-sec {
+            padding-left: 0px;
+
+            .book-apointment {
+                text-align: center;
+                display: inline-block;
+                width: auto;
+                max-width: 240px;
+                margin: 0 auto;
+                border: 1px solid #1d1f1e;
+                font-size: var(--f16);
+                font-weight: var(--fw600);
+                padding: 10px 20px;
+                margin-right: 20px;
+            }
+
+            @include for-tablet-landscape-2 {
+                padding-left: inherit;
+                padding: 30px 30px;
+            }
+            .bold-text {
+                font-size: var(--f16);
+                font-weight: var(--fw600);
+                color: var(--primary-color);
+
+                @include for-tablet-landscape-2 {
+                    font-size: var(--f14);
+                }
+
+                span {
+                    font-size: var(--f20);
+                    vertical-align: middle;
+                }
+            }
+
+            .days-sec {
+                .days {
+                    width: 200px;
+                    display: inline-block;
+                }
+
+                p {
+                    span {
+                        font-size: var(--f16);
+                        font-weight: var(--fw400);
+                        color: var(--primary-color);
+
+                        @include for-tablet-landscape-2 {
+                            font-size: var(--f14);
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .expert-wrapper .expert-text-wrapper {
+        padding: 60px 15px 44px;
+    }
+
+    .special-feature-slider .thumbslider-section .thumbslider-thumb {
+        padding: 0 0px;
+    }
+
+    .expert-wrapper .expert-text-wrapper {
+        padding: 30px 15px 44px;
+    }
+
+    .book-appoint-sec .sec-In .book-app-links>a+a {
+        text-decoration: underline;
+    }
+}

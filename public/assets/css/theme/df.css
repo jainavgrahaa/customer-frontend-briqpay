@@ -1,0 +1,17 @@
+[data-theme=df] {
+  --bistre-brown: #957127;
+  --bistre-brown-dark: #4B3914;
+  --bistre-brown-light: #BA9659;
+  --bistre-brown-light1: rgba(202, 181, 142,0.5);
+  --dark-300: #858586;
+  --dark-200: #ADADAE;
+  --light-gray-bg-6: #c9c9ca;
+  --light-gray-bg-7: #f5f2ec;
+  --light-bistre-brown: #F8F2E7;
+  --light-gray-bg-2:#FFFFFF;
+  --light-gray-bg-4:#f8f2e7;
+  --light-blue: #f8f2e7;
+  --swiper-theme-color: #957127;
+  --dark400: #090909;
+  --f56: 3.5rem;
+}

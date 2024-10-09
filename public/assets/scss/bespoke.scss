@@ -1,0 +1,383 @@
+@import './variables.scss', './mixins.scss', './theme/index.scss';
+
+.bespoke-form-modal {
+    &.modal {
+        .modal-inner {
+            width: auto;
+            height: fit-content;
+
+            .modal-main-content {
+                .modal-actions {
+                    justify-content: center;
+                    background: none;
+                }
+
+                .modal-title {
+                    h2 {
+                        padding-top: 0;
+
+                        @include for-tablet-landscape-2 {
+                            font-size: var(--f36);
+                            padding: 0px 18px 26px;
+                            line-height: 49px;
+                        }
+                    }
+                }
+
+                .modal-content {
+                    .bespoke-form {
+                        padding: 40px;
+                        background: var(--light-gray-bg-4);
+                        margin-bottom: 40px;
+
+                        @include for-tablet-landscape-2 {
+                            padding: 40px 8px 0px;
+                            margin-bottom: 0;
+                        }
+
+                        .message-input {
+                            margin-top: 20px;
+                            padding-bottom: 20px;
+
+                            @include for-tablet-landscape-2 {
+                                margin-top: 0;
+
+                                input {
+                                    padding-bottom: 60px;
+                                }
+                            }
+                        }
+
+                        .MuiFormControl-root {
+                            width: 100%;
+                            padding-bottom: 10px;
+
+                            .MuiInputLabel-root {
+                                font-weight: var(--fw600);
+                                color: var(--light-gray-color-1);
+                            }
+                        }
+
+                        .MuiFormControlLabel-root {
+                            @include for-phone-only {
+                                padding-bottom: 10px;
+                            }
+
+                            .MuiCheckbox-root {
+                                height: 18px;
+                                width: 18px;
+                                border: 1px solid var(--light-gray-color-1);
+                                margin: 0 10px;
+                                border-radius: 0;
+
+                                svg {
+                                    opacity: 0;
+                                }
+
+                                &.Mui-checked {
+                                    svg {
+                                        opacity: 1;
+                                        fill: var(--light-gray-bg-5);
+                                    }
+                                }
+                            }
+
+                            .MuiFormControlLabel-label {
+                                font-size: var(--f14);
+
+                                a {
+                                    color: var(--light-gray-bg-5);
+                                    font-weight: var(--fw600);
+                                }
+                            }
+                        }
+
+                    }
+
+                    .bespoke-details-form {
+                        padding: 0;
+                        background: var(--white-color);
+                        gap: 60px;
+
+                        @include for-tablet-landscape-2 {
+                            margin: 0 8px;
+                            gap: 36px;
+                        }
+
+                        .text-radio-wrap,
+                        .text-checkbox-wrap {
+                            @include for-tablet-landscape-2 {
+                                padding: 0;
+                            }
+
+                            p {
+                                margin-bottom: 30px;
+
+                                @include for-tablet-landscape-2 {
+                                    margin-bottom: 26px;
+                                }
+                            }
+
+                            label:not(.MuiInputLabel-root) {
+                                font-size: var(--f24);
+                                font-weight: var(--fw600);
+                                color: var(--primary-color);
+                                padding-bottom: 30px;
+
+                                @include for-tablet-landscape-2 {
+                                    font-size: var(--f18);
+                                    padding-bottom: 26px;
+                                }
+                            }
+
+                            &.jewellery-kind {
+                                .text-radio-list {
+                                    .MuiButtonBase-root {
+                                        width: 48%;
+
+                                        @include for-tablet-landscape-2 {
+                                            width: 98%;
+                                        }
+                                    }
+
+                                }
+                            }
+
+                            &.full-width-radio {
+                                .text-radio-list {
+                                    .MuiButtonBase-root {
+                                        width: 98%;
+                                    }
+
+                                }
+                            }
+
+                            &.shape-in-mind {
+                                .text-radio-list {
+                                    .MuiButtonBase-root {
+                                        width: 18%;
+
+                                        @include for-tablet-landscape-2 {
+                                            width: 32%;
+                                            justify-content: center;
+                                        }
+
+                                        li {
+                                            display: flex;
+                                            flex-direction: column;
+                                            gap: 10px;
+
+                                            img {
+                                                max-width: none;
+
+                                                @include for-tablet-landscape-2 {
+                                                    width: 50px;
+                                                }
+                                            }
+
+                                            .MuiListItemText-root {
+                                                span {
+                                                    font-size: var(--f18);
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                }
+                            }
+
+                            &.metal-in-mind {
+                                .text-radio-list {
+                                    .MuiButtonBase-root {
+                                        width: 31.5%;
+                                        justify-content: center;
+
+                                        @include for-tablet-landscape-2 {
+                                            width: 49%;
+                                        }
+
+                                        li {
+                                            display: flex;
+                                            flex-direction: column;
+                                            gap: 10px;
+                                            text-align: center;
+
+                                            img {
+                                                max-width: none;
+                                                width: 48px;
+
+                                                @include for-tablet-landscape-2 {
+                                                    width: 38px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.hear-about-us {
+                                .text-radio-list {
+                                    .MuiButtonBase-root {
+                                        width: 48%;
+
+                                        @include for-tablet-landscape-2 {
+                                            width: 49%;
+                                        }
+
+                                        li {
+                                            .MuiListItemText-root {
+                                                @include for-tablet-landscape-2 {
+                                                    max-width: 106px;
+
+                                                    span {
+                                                        text-align: left;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.text-with-input {
+                                .MuiTextField-root {
+                                    padding: 13px 40px 30px;
+                                    background: var(--light-gray-bg-4);
+
+                                    @include for-tablet-landscape-2 {
+                                        padding: 13px 30px 30px;
+                                    }
+
+                                    label {
+                                        padding: 13px 40px 30px;
+                                        color: var(--light-gray-color-1);
+
+                                        @include for-tablet-landscape-2 {
+                                            padding: 13px 30px 30px;
+                                        }
+                                    }
+
+                                    .MuiInputBase-input {
+                                        input {
+                                            padding-bottom: 10px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.text-with-file-input {
+                                .MuiTextField-root {
+                                    display: none;
+                                }
+
+                                .file-input-label {
+                                    background: var(--light-gray-bg-4);
+                                    padding: 20px 40px;
+                                    font-size: var(--f18);
+                                    font-weight: var(--fw400);
+                                    cursor: pointer;
+
+                                    @include for-tablet-landscape-2 {
+                                        font-size: var(--f16);
+                                        padding: 20px 30px;
+                                    }
+
+                                    svg {
+                                        height: 25px;
+                                        width: 25px;
+                                        margin-right: 8px;
+                                        margin-top: 3px;
+                                    }
+                                }
+                            }
+
+                            &.full-width-checkbox {
+                                .text-checkbox-list {
+                                    .MuiFormControlLabel-root {
+                                        width: 98%;
+                                    }
+                                }
+                            }
+
+                            .text-checkbox-list {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 16px;
+
+                                .active {
+                                    border: 1px var(--primary-color) solid;
+                                }
+
+                                @include for-tablet-landscape-2 {
+                                    gap: 6px;
+                                }
+
+                                .MuiCheckbox-root {
+                                    display: none;
+                                }
+
+                                .MuiFormControlLabel-root {
+                                    background: var(--light-gray-bg-4);
+                                    margin: 0;
+                                    padding: 0;
+
+                                    .MuiFormControlLabel-label {
+                                        font-size: var(--f18);
+                                        padding: 20px 40px;
+
+                                        @include for-tablet-landscape-2 {
+                                            font-size: var(--f16);
+                                        }
+                                    }
+                                }
+                            }
+
+                            .text-radio-list {
+                                gap: 16px;
+
+                                @include for-tablet-landscape-2 {
+                                    gap: 6px;
+                                }
+
+                                .MuiButtonBase-root {
+                                    background: var(--light-gray-bg-4);
+                                    margin: 0;
+                                    padding: 10px 24px;
+
+                                    @include for-tablet-landscape-2 {
+                                        max-width: 100%;
+                                        width: 100%;
+                                        padding: 10px 14px;
+                                    }
+                                }
+
+                                .MuiListItemText-root {
+                                    span {
+                                        font-size: var(--f18);
+
+                                        @include for-tablet-landscape-2 {
+                                            font-size: var(--f16);
+                                            text-align: center;
+                                        }
+                                    }
+                                }
+
+                            }
+
+                        }
+                    }
+                }
+
+                .modal-close-btn {
+                    @include for-tablet-landscape-2 {
+                        position: relative;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.selected {
+    border: 1px solid;
+}

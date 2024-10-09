@@ -1,0 +1,17 @@
+apiVersion: networking.gke.io/v1
+kind: ManagedCertificate
+metadata:
+  name: nj-customer-ui-cert
+spec:
+  domains:
+  - prod.nj.nvizion.io
+  - prod-df.nj.nvizion.io
+  - staging.nj.nvizion.io
+  - staging-qa.nj.nvizion.io
+  - staging-df.nj.nvizion.io
+  - uat.nj.nvizion.io
+  - uat-qa.nj.nvizion.io
+  - uat-df.nj.nvizion.io
+  - dev.nj.nvizion.io
+  - dev-qa.nj.nvizion.io
+  - dev-df.nj.nvizion.io

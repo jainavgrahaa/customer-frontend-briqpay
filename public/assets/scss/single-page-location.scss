@@ -1,0 +1,69 @@
+@import './variables.scss', './mixins.scss', './theme/index.scss';
+
+.single-location-wrapper {
+    .inner-banner{
+        .banner-content {
+            display: flex;
+            flex-direction: column-reverse;
+            .heading{
+                margin-top: 8px;
+                margin-bottom: 0px;
+            }
+        }
+    } 
+    .exper-book-apointment {
+        .expert-wrapper {
+            flex-direction: row-reverse;
+        }
+    }
+
+    .book-appoint-sec {
+        margin-top: 0;
+    }
+
+    .center-text {
+        text-align: center;
+        width: auto;
+        max-width: 40vw;
+        margin: 0 auto;
+        padding: 60px 0;
+        font-size: var(--f16);
+        line-height: 22px;
+        color: var(--primary-color);
+        font-weight: var(--fw400);
+
+        @include for-tablet-landscape-2 {
+            font-size: var(--f14);
+            padding: 30px 0;
+            max-width: initial;
+        }
+
+        .color-text {
+            color: var(--light-gray-bg-5);
+            font-weight: var(--fw400);
+        }
+    }
+    @include for-tablet-landscape-2 {
+        .expert-wrapper .expert-text-wrapper {
+            padding: 60px 15px 44px;
+        }
+
+        .special-feature-slider .thumbslider-section .thumbslider-thumb {
+            padding: 0 0px;
+        }
+
+        .expert-wrapper,
+        .exper-book-apointment .expert-wrapper {
+            flex-direction: column-reverse;
+        }
+
+        .expert-wrapper .expert-text-wrapper {
+            padding: 0px 15px 44px;
+        }
+
+        .book-appoint-sec .sec-In .book-app-links>a+a {
+            text-decoration: underline;
+        }
+    }
+
+}

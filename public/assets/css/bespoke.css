@@ -1,0 +1,442 @@
+/* Variables */
+/* Variables */
+/* exports */
+:export {
+  brandColor: var(--brand-color);
+  defaultFont: var(--plus-jakarta-sans);
+}
+
+/* Media Mixins */
+:root {
+  --alice-blue-color: #f0f8ff;
+  --brand-color: #121213;
+  --brand-light-color: #fff;
+  --link-color: rgb(13, 98, 255);
+  --link-color-hover: darken(var(--link-color), 10%);
+  --black-color: #000;
+  --black-color-2: #333335;
+  --white-color: #fff;
+  --white-color-2: #F5F5F5;
+  --pista-green: #F3F8F6;
+  --dark-blue-color: #2A3E52;
+  --light-gray-color: #ccc;
+  --light-gray-color-1: #A4AAAE;
+  --light-gray-color-2: #666666;
+  --primary-color: #1d1f1e;
+  --light-gray-bg-1: #dedde0;
+  --light-gray-bg-2: #F0F6FD;
+  --light-gray-bg-3: #D9D9D9;
+  --light-gray-bg-4: #F8F8F8;
+  --light-gray-bg-5: #748DA6;
+  --medium-gray: #aaa;
+  --dark-shade-gray: #222;
+  --light-grayish-blue: #e2e3e4;
+  --lighten-dark-color-50: lighten(var(--black-color), 50%);
+  --lighten-light-color-50: lighten(var(--white-color), 50%);
+  --lighten-transparent-10: fade(var(--white-color), 90%);
+  --pos_absolute: absolute;
+  --dark-gray-color: #DADEE0;
+  --dark-gray-color-2: #2A3E52;
+  --light-blue: #F0F6FD;
+  --orange: #e24b1b;
+  --plate-sliver: #C8C0B3;
+  --modal-bg-color: #1d1f1eb5;
+  --inherit-color: inherit;
+  --light-green-color: #bfb;
+  --light-brown: #BA9659;
+  --light-brown-2: #FFFCF6;
+  --light-brown-3: #957127;
+  --light-brown-4: #F4E8DA;
+  --light-brown-5: #D6BB8F;
+  --light-grey-6: #dadee0;
+  --bistre-brown: #957127;
+  --black-2: #333335;
+  --swiper-theme-color: #2A3E52;
+  --plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
+  --prata-font: "Prata", serif;
+  --playfair-display: "Playfair Display", serif;
+  --fw400: 400;
+  --fw500: 500;
+  --fw600: 600;
+  --fweight700: 700;
+  --default-lg-fontsize: 18px;
+  --default-desktop-fontsize: 14px;
+  --default-mobile-fontsize: 14px;
+  --f10: 0.625rem;
+  --f12: 0.857rem;
+  --f13: 0.929rem;
+  --f14: 1rem;
+  --f15: 1.071rem;
+  --f16: 1.143rem;
+  --f18: 1.286rem;
+  --f20: 1.429rem;
+  --f24: 1.714rem;
+  --f28: 1.75rem;
+  --f30: 2.143rem;
+  --f32: 2rem;
+  /* 32px */
+  --f34: 2.125rem;
+  --f36: 2.571rem;
+  --f40: 2.857rem;
+  --f48: 3.429rem;
+  --f64: 4.571rem;
+  --f80: 5.714rem;
+  --ab-primary-color: #1D1F1E;
+  --Ivy-font: "Ivy Mode";
+  --Libre-franklin: "Libre Franklin", sans-serif;
+  --df-primary-color: #333335;
+  --df-required-tcolor: #E54545;
+}
+
+:export {
+  brandColor: var(--brand-color);
+  defaultFont: var(--plus-jakarta-sans);
+}
+
+.bespoke-form-modal.modal .modal-inner {
+  width: auto;
+  height: fit-content;
+}
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-actions {
+  justify-content: center;
+  background: none;
+}
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-title h2 {
+  padding-top: 0;
+}
+@media (max-width: 992px) {
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-title h2 {
+    font-size: var(--f36);
+    padding: 0px 18px 26px;
+    line-height: 49px;
+  }
+}
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-form {
+  padding: 40px;
+  background: var(--light-gray-bg-4);
+  margin-bottom: 40px;
+}
+@media (max-width: 992px) {
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-form {
+    padding: 40px 8px 0px;
+    margin-bottom: 0;
+  }
+}
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-form .message-input {
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+@media (max-width: 992px) {
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-form .message-input {
+    margin-top: 0;
+  }
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-form .message-input input {
+    padding-bottom: 60px;
+  }
+}
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-form .MuiFormControl-root {
+  width: 100%;
+  padding-bottom: 10px;
+}
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-form .MuiFormControl-root .MuiInputLabel-root {
+  font-weight: var(--fw600);
+  color: var(--light-gray-color-1);
+}
+@media (max-width: 599px) {
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-form .MuiFormControlLabel-root {
+    padding-bottom: 10px;
+  }
+}
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-form .MuiFormControlLabel-root .MuiCheckbox-root {
+  height: 18px;
+  width: 18px;
+  border: 1px solid var(--light-gray-color-1);
+  margin: 0 10px;
+  border-radius: 0;
+}
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-form .MuiFormControlLabel-root .MuiCheckbox-root svg {
+  opacity: 0;
+}
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-form .MuiFormControlLabel-root .MuiCheckbox-root.Mui-checked svg {
+  opacity: 1;
+  fill: var(--light-gray-bg-5);
+}
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-form .MuiFormControlLabel-root .MuiFormControlLabel-label {
+  font-size: var(--f14);
+}
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-form .MuiFormControlLabel-root .MuiFormControlLabel-label a {
+  color: var(--light-gray-bg-5);
+  font-weight: var(--fw600);
+}
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form {
+  padding: 0;
+  background: var(--white-color);
+  gap: 60px;
+}
+@media (max-width: 992px) {
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form {
+    margin: 0 8px;
+    gap: 36px;
+  }
+}
+@media (max-width: 992px) {
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap,
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap {
+    padding: 0;
+  }
+}
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap p,
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap p {
+  margin-bottom: 30px;
+}
+@media (max-width: 992px) {
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap p,
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap p {
+    margin-bottom: 26px;
+  }
+}
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap label:not(.MuiInputLabel-root),
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap label:not(.MuiInputLabel-root) {
+  font-size: var(--f24);
+  font-weight: var(--fw600);
+  color: var(--primary-color);
+  padding-bottom: 30px;
+}
+@media (max-width: 992px) {
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap label:not(.MuiInputLabel-root),
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap label:not(.MuiInputLabel-root) {
+    font-size: var(--f18);
+    padding-bottom: 26px;
+  }
+}
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap.jewellery-kind .text-radio-list .MuiButtonBase-root,
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap.jewellery-kind .text-radio-list .MuiButtonBase-root {
+  width: 48%;
+}
+@media (max-width: 992px) {
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap.jewellery-kind .text-radio-list .MuiButtonBase-root,
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap.jewellery-kind .text-radio-list .MuiButtonBase-root {
+    width: 98%;
+  }
+}
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap.full-width-radio .text-radio-list .MuiButtonBase-root,
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap.full-width-radio .text-radio-list .MuiButtonBase-root {
+  width: 98%;
+}
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap.shape-in-mind .text-radio-list .MuiButtonBase-root,
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap.shape-in-mind .text-radio-list .MuiButtonBase-root {
+  width: 18%;
+}
+@media (max-width: 992px) {
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap.shape-in-mind .text-radio-list .MuiButtonBase-root,
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap.shape-in-mind .text-radio-list .MuiButtonBase-root {
+    width: 32%;
+    justify-content: center;
+  }
+}
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap.shape-in-mind .text-radio-list .MuiButtonBase-root li,
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap.shape-in-mind .text-radio-list .MuiButtonBase-root li {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap.shape-in-mind .text-radio-list .MuiButtonBase-root li img,
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap.shape-in-mind .text-radio-list .MuiButtonBase-root li img {
+  max-width: none;
+}
+@media (max-width: 992px) {
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap.shape-in-mind .text-radio-list .MuiButtonBase-root li img,
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap.shape-in-mind .text-radio-list .MuiButtonBase-root li img {
+    width: 50px;
+  }
+}
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap.shape-in-mind .text-radio-list .MuiButtonBase-root li .MuiListItemText-root span,
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap.shape-in-mind .text-radio-list .MuiButtonBase-root li .MuiListItemText-root span {
+  font-size: var(--f18);
+}
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap.metal-in-mind .text-radio-list .MuiButtonBase-root,
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap.metal-in-mind .text-radio-list .MuiButtonBase-root {
+  width: 31.5%;
+  justify-content: center;
+}
+@media (max-width: 992px) {
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap.metal-in-mind .text-radio-list .MuiButtonBase-root,
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap.metal-in-mind .text-radio-list .MuiButtonBase-root {
+    width: 49%;
+  }
+}
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap.metal-in-mind .text-radio-list .MuiButtonBase-root li,
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap.metal-in-mind .text-radio-list .MuiButtonBase-root li {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap.metal-in-mind .text-radio-list .MuiButtonBase-root li img,
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap.metal-in-mind .text-radio-list .MuiButtonBase-root li img {
+  max-width: none;
+  width: 48px;
+}
+@media (max-width: 992px) {
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap.metal-in-mind .text-radio-list .MuiButtonBase-root li img,
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap.metal-in-mind .text-radio-list .MuiButtonBase-root li img {
+    width: 38px;
+  }
+}
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap.hear-about-us .text-radio-list .MuiButtonBase-root,
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap.hear-about-us .text-radio-list .MuiButtonBase-root {
+  width: 48%;
+}
+@media (max-width: 992px) {
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap.hear-about-us .text-radio-list .MuiButtonBase-root,
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap.hear-about-us .text-radio-list .MuiButtonBase-root {
+    width: 49%;
+  }
+}
+@media (max-width: 992px) {
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap.hear-about-us .text-radio-list .MuiButtonBase-root li .MuiListItemText-root,
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap.hear-about-us .text-radio-list .MuiButtonBase-root li .MuiListItemText-root {
+    max-width: 106px;
+  }
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap.hear-about-us .text-radio-list .MuiButtonBase-root li .MuiListItemText-root span,
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap.hear-about-us .text-radio-list .MuiButtonBase-root li .MuiListItemText-root span {
+    text-align: left;
+  }
+}
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap.text-with-input .MuiTextField-root,
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap.text-with-input .MuiTextField-root {
+  padding: 13px 40px 30px;
+  background: var(--light-gray-bg-4);
+}
+@media (max-width: 992px) {
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap.text-with-input .MuiTextField-root,
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap.text-with-input .MuiTextField-root {
+    padding: 13px 30px 30px;
+  }
+}
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap.text-with-input .MuiTextField-root label,
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap.text-with-input .MuiTextField-root label {
+  padding: 13px 40px 30px;
+  color: var(--light-gray-color-1);
+}
+@media (max-width: 992px) {
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap.text-with-input .MuiTextField-root label,
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap.text-with-input .MuiTextField-root label {
+    padding: 13px 30px 30px;
+  }
+}
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap.text-with-input .MuiTextField-root .MuiInputBase-input input,
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap.text-with-input .MuiTextField-root .MuiInputBase-input input {
+  padding-bottom: 10px;
+}
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap.text-with-file-input .MuiTextField-root,
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap.text-with-file-input .MuiTextField-root {
+  display: none;
+}
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap.text-with-file-input .file-input-label,
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap.text-with-file-input .file-input-label {
+  background: var(--light-gray-bg-4);
+  padding: 20px 40px;
+  font-size: var(--f18);
+  font-weight: var(--fw400);
+  cursor: pointer;
+}
+@media (max-width: 992px) {
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap.text-with-file-input .file-input-label,
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap.text-with-file-input .file-input-label {
+    font-size: var(--f16);
+    padding: 20px 30px;
+  }
+}
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap.text-with-file-input .file-input-label svg,
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap.text-with-file-input .file-input-label svg {
+  height: 25px;
+  width: 25px;
+  margin-right: 8px;
+  margin-top: 3px;
+}
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap.full-width-checkbox .text-checkbox-list .MuiFormControlLabel-root,
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap.full-width-checkbox .text-checkbox-list .MuiFormControlLabel-root {
+  width: 98%;
+}
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap .text-checkbox-list,
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap .text-checkbox-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap .text-checkbox-list .active,
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap .text-checkbox-list .active {
+  border: 1px var(--primary-color) solid;
+}
+@media (max-width: 992px) {
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap .text-checkbox-list,
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap .text-checkbox-list {
+    gap: 6px;
+  }
+}
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap .text-checkbox-list .MuiCheckbox-root,
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap .text-checkbox-list .MuiCheckbox-root {
+  display: none;
+}
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap .text-checkbox-list .MuiFormControlLabel-root,
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap .text-checkbox-list .MuiFormControlLabel-root {
+  background: var(--light-gray-bg-4);
+  margin: 0;
+  padding: 0;
+}
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap .text-checkbox-list .MuiFormControlLabel-root .MuiFormControlLabel-label,
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap .text-checkbox-list .MuiFormControlLabel-root .MuiFormControlLabel-label {
+  font-size: var(--f18);
+  padding: 20px 40px;
+}
+@media (max-width: 992px) {
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap .text-checkbox-list .MuiFormControlLabel-root .MuiFormControlLabel-label,
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap .text-checkbox-list .MuiFormControlLabel-root .MuiFormControlLabel-label {
+    font-size: var(--f16);
+  }
+}
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap .text-radio-list,
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap .text-radio-list {
+  gap: 16px;
+}
+@media (max-width: 992px) {
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap .text-radio-list,
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap .text-radio-list {
+    gap: 6px;
+  }
+}
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap .text-radio-list .MuiButtonBase-root,
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap .text-radio-list .MuiButtonBase-root {
+  background: var(--light-gray-bg-4);
+  margin: 0;
+  padding: 10px 24px;
+}
+@media (max-width: 992px) {
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap .text-radio-list .MuiButtonBase-root,
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap .text-radio-list .MuiButtonBase-root {
+    max-width: 100%;
+    width: 100%;
+    padding: 10px 14px;
+  }
+}
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap .text-radio-list .MuiListItemText-root span,
+.bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap .text-radio-list .MuiListItemText-root span {
+  font-size: var(--f18);
+}
+@media (max-width: 992px) {
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-radio-wrap .text-radio-list .MuiListItemText-root span,
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-content .bespoke-details-form .text-checkbox-wrap .text-radio-list .MuiListItemText-root span {
+    font-size: var(--f16);
+    text-align: center;
+  }
+}
+@media (max-width: 992px) {
+  .bespoke-form-modal.modal .modal-inner .modal-main-content .modal-close-btn {
+    position: relative;
+  }
+}
+
+.selected {
+  border: 1px solid;
+}

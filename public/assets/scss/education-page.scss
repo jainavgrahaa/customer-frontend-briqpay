@@ -1,0 +1,207 @@
+@import "./variables.scss", "./mixins.scss", "./theme/index.scss";
+
+.education-wrapper {
+  .faq-page {
+    .inner-banner {
+      margin-bottom: 0;
+
+      @include for-tablet-landscape-2 {
+        margin-bottom: 30px;
+      }
+
+      .banner-content {
+        @include for-tablet-landscape-2 {
+          flex-direction: column;
+        }
+
+        .banner-desc {
+          p {
+            a {
+              font-size: var(--f16);
+              font-weight: var(--fw600);
+              text-decoration: underline;
+              margin-top: 15px;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .about-us-block {
+    padding: 0;
+  }
+
+  .guide-section {
+    @include for-tablet-landscape-2 {
+      padding: 40px 18px 20px;
+    }
+
+    h2 {
+      font-size: var(--f24);
+      font-weight: var(--fw600);
+      color: var(--primary-color);
+      margin-bottom: 24px;
+
+      @include for-tablet-landscape-2 {
+        font-size: var(--f18);
+      }
+    }
+
+    p {
+      font-size: var(--f14);
+      font-weight: var(--fw400);
+      color: var(--primary-color);
+      padding-right: 30px;
+
+      @include for-tablet-landscape-2 {
+        padding-right: 10px;
+      }
+    }
+  }
+
+  .tabs-section {
+    margin: 44px 0 20px;
+
+    @include for-tablet-landscape-2 {
+      margin: 0;
+    }
+
+    &.middle-arrow-slider {
+      position: relative;
+
+      .thumbslider-section {
+        padding: 0;
+
+        .container {
+          overflow: hidden;
+
+          .thumbslider-header {
+            .thumbslider-controls {
+              div {
+                &:nth-child(1) {
+                  position: absolute;
+                  left: 0px;
+                  top: 5%;
+                  border: none;
+                  z-index: 99;
+                }
+
+                &:nth-child(2) {
+                  position: absolute;
+                  right: 0px;
+                  top: 5%;
+                  border: none;
+                  z-index: 99;
+                }
+              }
+            }
+          }
+
+          .swiper {
+            max-width: 550px;
+          }
+        }
+      }
+    }
+
+    .bloc-tabs {
+      width: auto;
+      max-width: 520px;
+      display: block;
+      margin: 0 auto;
+
+      @include for-tablet-landscape-2 {
+        flex-direction: row;
+        padding: 0px;
+      }
+
+      .tabs {
+        text-decoration: none;
+        background-color: var(--light-gray-bg-4);
+        padding: 12px 20px;
+        color: var(--primary-color);
+        width: 130px;
+        margin: 0 10px;
+        padding: 10px 0px;
+
+        @include for-tablet-landscape-2 {
+          width: 166px;
+          margin: 0 15px;
+          width: 166px;
+          margin: 0px;
+          padding: 10px 0px;
+          text-align: center;
+        }
+
+        &:nth-child(2) {
+          @include for-tablet-landscape-2 {
+            margin-left: 10px;
+          }
+        }
+
+        &.active-tabs {
+          background-color: var(--dark-gray-color-2);
+          padding: 10px 0px;
+          color: var(--white-color);
+
+          @include for-tablet-landscape-2 {
+            width: 166px;
+            margin: 0 15px;
+            padding: 10px 20px;
+            width: 166px;
+            margin: 0px;
+            padding: 10px 0px;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .content-tabs {
+      padding: 0;
+
+      .content {
+        padding: 0;
+
+        .faq-sec {
+          margin-top: 0;
+
+          @include for-tablet-landscape-2 {
+            padding: 15px 0px;
+            margin-bottom: 20px;
+          }
+
+          h4 {
+            @include for-tablet-landscape-2 {
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .contact-us-block {
+    margin-top: 0;
+  }
+
+  .expert-wrapper {
+    @include for-tablet-landscape-2 {
+      flex-direction: column;
+    }
+
+    .expert-text-wrapper {
+      @include for-tablet-landscape-2 {
+        padding: 30px 20px 44px;
+      }
+    }
+  }
+
+  .book-appoint-sec {
+    @include for-tablet-landscape-2 {
+      margin-top: 50px;
+    }
+  }
+}

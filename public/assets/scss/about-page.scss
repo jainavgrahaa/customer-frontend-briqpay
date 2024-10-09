@@ -1,0 +1,142 @@
+@import './variables.scss', './mixins.scss', './theme/index.scss';
+
+
+.thumbslider-section{
+    .swiper{
+        overflow: hidden;
+        .swiper-wrapper{
+            padding: 0;
+        }
+    }
+    .container{
+        @include for-tablet-landscape-2{
+            padding: 0;
+        }
+    }
+}
+
+.aboutpage-wrapper {
+    .blog-main-page-wrapper .blog-main-header {
+        margin-bottom: 55%;
+
+        @include for-tablet-landscape-2 {
+            margin-bottom: 340%;
+        }
+    }
+
+    .blog-main-page-wrapper .blog-main-header .latest-stories-sec {
+        left: 5%;
+        width: 90vw;
+        bottom: auto;
+        margin-top: -50px;
+
+        @include for-tablet-landscape-2 {
+            left: 2%;
+            width: 96vw;
+        }
+    }
+
+    .blog-main-page-wrapper .blog-main-header .latest-stories-sec h1 {
+        font-size: var(--f64);
+        @include for-tablet-landscape-2 {
+            font-size: var(--f48);
+            font-weight: var(--fw400);
+        }
+    }
+
+    .quote-section {
+        div {
+            max-width: 810px;
+            padding: 0;
+
+            h3 {
+                font-size: var(--f48);
+                font-family: var(--playfair-display);
+
+                @include for-tablet-landscape-2 {
+                    font-size: var(--f36);
+                }
+            }
+
+            .before-quote {
+                left: -50px;
+                top: -20px;
+
+                @include for-tablet-landscape-2 {
+                    left: -20px;
+                    top: -40px;
+                }
+            }
+
+            .after-quote {
+                bottom: 0;
+                right: -50px;
+
+                @include for-tablet-landscape-2 {
+                    bottom: -10px;
+                    right: -23px;
+                }
+            }
+        }
+    }
+
+    .our-team-sec {
+        .our-team-center-content {
+            width: auto;
+            max-width: 640px;
+            margin: 0 auto;
+            text-align: center;
+
+            h1 {
+                font-size: var(--f64);
+                font-weight: var(--fw400);
+
+                @include for-tablet-landscape-2 {
+                    font-size: var(--f48);
+                }
+            }
+
+            p {
+                font-size: var(--f16);
+                font-weight: var(--fw400);
+                margin-bottom: 40px;
+
+                @include for-tablet-landscape-2 {
+                    font-size: var(--f14);
+                }
+            }
+        }
+
+        img {
+            margin-bottom: 60px;
+        }
+    }
+
+    .brand-vision-sec {
+        margin-bottom: 60px;
+
+        h1 {
+            @include for-tablet-landscape-2 {
+                font-size: var(--f48);
+            }
+        }
+
+        .mobile-gap {
+            @include for-tablet-landscape-2 {
+                padding: 0 30px;
+            }
+        }
+    }
+
+    .cara-logos {
+        @include for-tablet-landscape-2 {
+            gap: 10px 10px;
+        }
+    }
+
+    .create-design-section .choose-section .choose-section-thumb {
+        @include for-tablet-landscape-2 {
+            background: transparent;
+        }
+    }
+}

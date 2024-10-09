@@ -1,0 +1,366 @@
+# ingress.yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: customer-ui
+  annotations:
+    # This tells Google Cloud to create an External Load Balancer to realize this Ingress
+    kubernetes.io/ingress.class: gce
+    # This enables HTTP connections from Internet clients
+    kubernetes.io/ingress.allow-http: "true"
+    # This tells Google Cloud to associate the External Load Balancer with the static IP which we created earlier
+    kubernetes.io/ingress.global-static-ip-name: customer-ui
+    # Google managed-cert
+    networking.gke.io/managed-certificates: nj-customer-ui-cert
+spec:
+  rules:
+  - host: staging.nj.nvizion.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: customer-ui-staging
+            port:
+              number: 3002
+        path: /*
+        pathType: ImplementationSpecific
+  - host: staging-df.nj.nvizion.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: customer-ui-staging
+            port:
+              number: 3002
+        path: /*
+        pathType: ImplementationSpecific
+  - host: staging-qa.nj.nvizion.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: customer-ui-staging
+            port:
+              number: 3002
+        path: /*
+        pathType: ImplementationSpecific
+  - host: staging-uk.nj.nvizion.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: customer-ui-staging
+            port:
+              number: 3002
+        path: /*
+        pathType: ImplementationSpecific
+  - host: staging-ie.nj.nvizion.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: customer-ui-staging
+            port:
+              number: 3002
+        path: /*
+        pathType: ImplementationSpecific
+  - host: staging-df-uk.nj.nvizion.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: customer-ui-staging
+            port:
+              number: 3002
+        path: /*
+        pathType: ImplementationSpecific
+  - host: staging-df-us.nj.nvizion.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: customer-ui-staging
+            port:
+              number: 3002
+        path: /*
+        pathType: ImplementationSpecific
+  - host: staging-df-ie.nj.nvizion.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: customer-ui-staging
+            port:
+              number: 3002
+        path: /*
+        pathType: ImplementationSpecific
+  - host: prod.nj.nvizion.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: customer-ui
+            port:
+              number: 3002
+        path: /*
+        pathType: ImplementationSpecific
+  - host: prod-df.nj.nvizion.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: customer-ui
+            port:
+              number: 3002
+        path: /*
+        pathType: ImplementationSpecific
+  - host: prod-uk.nj.nvizion.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: customer-ui
+            port:
+              number: 3002
+        path: /*
+        pathType: ImplementationSpecific
+  - host: prod-ie.nj.nvizion.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: customer-ui
+            port:
+              number: 3002
+        path: /*
+        pathType: ImplementationSpecific
+  - host: prod-df-uk.nj.nvizion.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: customer-ui
+            port:
+              number: 3002
+        path: /*
+        pathType: ImplementationSpecific
+  - host: prod-df-us.nj.nvizion.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: customer-ui
+            port:
+              number: 3002
+        path: /*
+        pathType: ImplementationSpecific
+  - host: prod-df-ie.nj.nvizion.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: customer-ui
+            port:
+              number: 3002
+        path: /*
+        pathType: ImplementationSpecific
+  - host: uat.nj.nvizion.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: customer-ui-uat
+            port:
+              number: 3002
+        path: /*
+        pathType: ImplementationSpecific
+  - host: uat-df.nj.nvizion.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: customer-ui-uat
+            port:
+              number: 3002
+        path: /*
+        pathType: ImplementationSpecific
+  - host: uat-qa.nj.nvizion.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: customer-ui-uat
+            port:
+              number: 3002
+        path: /*
+        pathType: ImplementationSpecific
+  - host: uat-uk.nj.nvizion.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: customer-ui-uat
+            port:
+              number: 3002
+        path: /*
+        pathType: ImplementationSpecific
+  - host: uat-ie.nj.nvizion.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: customer-ui-uat
+            port:
+              number: 3002
+        path: /*
+        pathType: ImplementationSpecific
+  - host: uat-df-uk.nj.nvizion.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: customer-ui-uat
+            port:
+              number: 3002
+        path: /*
+        pathType: ImplementationSpecific
+  - host: uat-df-us.nj.nvizion.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: customer-ui-uat
+            port:
+              number: 3002
+        path: /*
+        pathType: ImplementationSpecific
+  - host: uat-df-ie.nj.nvizion.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: customer-ui-uat
+            port:
+              number: 3002
+        path: /*
+        pathType: ImplementationSpecific
+  - host: gpim.nj.nvizion.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: customer-ui-gpim
+            port:
+              number: 3002
+        path: /*
+        pathType: ImplementationSpecific
+  - host: gpim-df.nj.nvizion.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: customer-ui-gpim
+            port:
+              number: 3002
+        path: /*
+        pathType: ImplementationSpecific
+  - host: gpim-qa.nj.nvizion.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: customer-ui-gpim
+            port:
+              number: 3002
+        path: /*
+        pathType: ImplementationSpecific
+  - host: gpim-uk.nj.nvizion.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: customer-ui-gpim
+            port:
+              number: 3002
+        path: /*
+        pathType: ImplementationSpecific
+  - host: gpim-ie.nj.nvizion.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: customer-ui-gpim
+            port:
+              number: 3002
+        path: /*
+        pathType: ImplementationSpecific
+  - host: gpim-df-uk.nj.nvizion.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: customer-ui-gpim
+            port:
+              number: 3002
+        path: /*
+        pathType: ImplementationSpecific
+  - host: gpim-df-us.nj.nvizion.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: customer-ui-gpim
+            port:
+              number: 3002
+        path: /*
+        pathType: ImplementationSpecific
+  - host: gpim-df-ie.nj.nvizion.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: customer-ui-gpim
+            port:
+              number: 3002
+        path: /*
+        pathType: ImplementationSpecific
+  - host: gpim-df-fr.nj.nvizion.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: customer-ui-gpim
+            port:
+              number: 3002
+        path: /*
+        pathType: ImplementationSpecific
+  - host: dev.nj.nvizion.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: customer-ui-dev
+            port:
+              number: 3002
+        path: /*
+        pathType: ImplementationSpecific
+  - host: dev-df.nj.nvizion.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: customer-ui-dev
+            port:
+              number: 3002
+        path: /*
+        pathType: ImplementationSpecific
+  - host: dev-qa.nj.nvizion.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: customer-ui-dev
+            port:
+              number: 3002
+        path: /*
+        pathType: ImplementationSpecific

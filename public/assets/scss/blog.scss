@@ -1,0 +1,282 @@
+@import "./mixins.scss", "./theme/default-theme.scss","./theme/df.scss";
+// block navbar
+.blog-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+    align-items: center;
+    position: relative; 
+    flex-wrap: wrap;
+    @include themeStyles("df") {
+      margin-top: 0px;
+      border-top: 1px solid;
+      border-bottom: 1px solid;
+      border-color: var(--light-brown-4);
+      background: var(--light-brown-2);
+    }
+  .block-navbar {
+      padding: 15px 0;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      @include themeStyles("df"){
+        @include for-tablet-landscape-2{
+          flex-direction: row-reverse;
+          .blogs-search{
+            min-width: 20px;
+            margin-right: 15px;
+          }
+        }
+      }
+      &.search-active{
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+      @include themeStyles("ab"){
+      @include for-tablet-landscape-2{
+        width: 100% !important;
+        flex-direction: column;
+        padding: 0px;
+        gap: 20px;
+      }
+    }
+      .nav-menu {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        align-items: center;
+        @include themeStyles("ab") {
+          justify-content: flex-start;
+        }
+        @include themeStyles("df") {
+          gap: 20px;
+          overflow: auto;
+        }
+        @include for-tablet-landscape-2{
+          gap: 10px;
+        }
+        @include for-tablet-landscape-2{
+          flex-wrap: nowrap;
+          max-width: 100%;
+          overflow-x: auto;
+          }
+        .nav-item {
+          margin-bottom: 0px !important;
+          cursor: pointer;
+          padding: 6px 0px;
+          @include themeStyles("df") {
+            padding: 12px 0px;
+            color: var(--bistre-brown-dark);
+            font-size: var(--f18);
+            white-space: nowrap;
+            &.active{
+              color: var(--bistre-brown);
+              border-bottom: 1px solid var(--bistre-brown);          
+            }
+            &:hover{
+              color: var(--bistre-brown);
+            }
+          }
+          @include themeStyles("ab") {
+            color: var(--primary-color);
+            font-size: var(--f16);
+            font-weight: var(--fw600);
+            &.active{
+              border-bottom: 1px solid var(--primary-color);          
+            }
+            &:hover{
+              color: var(--primary-color);
+            }
+          }
+          @include for-tablet-landscape-2{
+              padding: 6px 5px;
+              white-space: nowrap;
+          }
+        }
+        .blog-search-icon {
+          color: var(--black-color);
+          cursor: pointer;
+        }
+      }
+      .blogs-search {
+        color: var(--bistre-brown);
+        cursor: pointer;
+      }
+  }
+
+  .blogsearch-popup {
+    @include themeStyles("df"){
+    background-color: var(--white-color);
+    width: 100%;
+    position: absolute;
+    border: none;
+    left: 0;
+    right: 0;
+    }
+    @include for-desktop-2{
+      padding: 0px 10px;
+    }
+    @include themeStyles("ab"){
+      width: 30%;
+      position: relative;
+      @include for-tablet-landscape-2{
+        width: 100%;
+      }
+    }
+      .MuiStack-root{
+      .icon-left-position {
+          position: absolute;
+          left: 15px;
+          @include themeStyles("df") {
+              color: var(--bistre-brown);
+          }
+      }
+      .search-close {
+          position: absolute;
+          right: 12px;
+          top: 7px;
+          margin: 0px !important;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          padding: 0px;
+          min-width: initial;
+          z-index: 99;
+          @include themeStyles("df") {
+              color: var(--bistre-brown);
+          }
+      }
+      .MuiAutocomplete-root{
+          &.Mui-focused,&.MuiAutocomplete-hasClearIcon{
+              label{
+              padding-left: 0px;
+              }
+          }
+          label{
+              padding-left: 35px;
+              @include themeStyles("df") {
+                  color: var(--bistre-brown);
+              }
+          }
+          .MuiInputBase-root{
+              @include themeStyles("df") {
+                background-color: var(--light-brown-2);
+                border-color: var(--light-brown-2);
+              }
+              input{
+                  padding-left: 40px;
+              }
+              .MuiAutocomplete-endAdornment{
+                  display: none;
+              }
+              fieldset{
+                @include themeStyles("ab") {
+                  border-top: none;
+                  border-right: none;
+                  border-left: none;
+                }
+              }
+          }
+      }
+  }
+  }
+}
+
+.blog-cards-container {
+  margin: 20px -20px;
+  display: flex;
+  flex-wrap: wrap;
+  .blog-card {
+    width: 33.3%;
+    padding: 0px 15px;
+    margin-bottom: 30px;
+    
+    @include themeStyles("ab") {
+      width: 50%;
+      position: relative;
+      .blog-card-descriptions {
+        background-color: var(--primary-color);
+        width: 100%;
+        max-width: 85%;
+        padding: 30px 40px;
+
+        @include for-phone-only{
+          padding: 15px 20px;
+        }
+        .blog-content{
+          p,h2,a{
+            color: var(--white-color);
+          }
+          .btn-link {
+            line-height: 25px;
+            font-size: var(--f14);
+
+            &:hover {
+              color: var(--white-color);
+              text-decoration: none;
+            }
+          }
+          .blog-card-title{
+            width: 100%;
+            max-width: 100%;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            color: var(--white-color);
+            margin-bottom: 0px;
+          }
+        }
+    }
+    }
+    @include for-phone-only{
+      width: 100% !important;
+    }
+    .blog-card-descriptions {
+      @include themeStyles("df"){
+        margin-top: 15px;
+        .blog-content{
+          .btn-link{
+            color: var(--bistre-brown);
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    .blog-card-image {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+    }
+    .blog-card-descriptions {
+      .blog-content {
+        .blog-card-date {
+          font-weight: var(--fw400);
+          font-size: var(--f14);
+          margin-top: 8px;
+          margin-bottom: 8px;
+        }
+        .blog-card-title{
+          @include themeStyles("df") {
+          }
+        }
+        .blog-card-button{
+          font-weight: var(--fw600);
+          font-size: var(--f14);
+          text-align: left;
+          padding: 0px;
+          display: block;
+          @include themeStyles("df") {
+            color: var(--bistre-brown);
+          }
+          &:hover{
+            background: transparent;
+          }
+        }
+      }
+    }
+  }
+}
+  

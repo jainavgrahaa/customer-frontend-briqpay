@@ -1,0 +1,220 @@
+/* Variables */
+/* Variables */
+/* exports */
+:export {
+  brandColor: var(--brand-color);
+  defaultFont: var(--plus-jakarta-sans);
+}
+
+/* Media Mixins */
+:root {
+  --alice-blue-color: #f0f8ff;
+  --brand-color: #121213;
+  --brand-light-color: #fff;
+  --link-color: rgb(13, 98, 255);
+  --link-color-hover: darken(var(--link-color), 10%);
+  --black-color: #000;
+  --black-color-2: #333335;
+  --white-color: #fff;
+  --white-color-2: #F5F5F5;
+  --pista-green: #F3F8F6;
+  --dark-blue-color: #2A3E52;
+  --light-gray-color: #ccc;
+  --light-gray-color-1: #A4AAAE;
+  --light-gray-color-2: #666666;
+  --primary-color: #1d1f1e;
+  --light-gray-bg-1: #dedde0;
+  --light-gray-bg-2: #F0F6FD;
+  --light-gray-bg-3: #D9D9D9;
+  --light-gray-bg-4: #F8F8F8;
+  --light-gray-bg-5: #748DA6;
+  --medium-gray: #aaa;
+  --dark-shade-gray: #222;
+  --light-grayish-blue: #e2e3e4;
+  --lighten-dark-color-50: lighten(var(--black-color), 50%);
+  --lighten-light-color-50: lighten(var(--white-color), 50%);
+  --lighten-transparent-10: fade(var(--white-color), 90%);
+  --pos_absolute: absolute;
+  --dark-gray-color: #DADEE0;
+  --dark-gray-color-2: #2A3E52;
+  --light-blue: #F0F6FD;
+  --orange: #e24b1b;
+  --plate-sliver: #C8C0B3;
+  --modal-bg-color: #1d1f1eb5;
+  --inherit-color: inherit;
+  --light-green-color: #bfb;
+  --light-brown: #BA9659;
+  --light-brown-2: #FFFCF6;
+  --light-brown-3: #957127;
+  --light-brown-4: #F4E8DA;
+  --light-brown-5: #D6BB8F;
+  --light-grey-6: #dadee0;
+  --bistre-brown: #957127;
+  --black-2: #333335;
+  --swiper-theme-color: #2A3E52;
+  --plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
+  --prata-font: "Prata", serif;
+  --playfair-display: "Playfair Display", serif;
+  --fw400: 400;
+  --fw500: 500;
+  --fw600: 600;
+  --fweight700: 700;
+  --default-lg-fontsize: 18px;
+  --default-desktop-fontsize: 14px;
+  --default-mobile-fontsize: 14px;
+  --f10: 0.625rem;
+  --f12: 0.857rem;
+  --f13: 0.929rem;
+  --f14: 1rem;
+  --f15: 1.071rem;
+  --f16: 1.143rem;
+  --f18: 1.286rem;
+  --f20: 1.429rem;
+  --f24: 1.714rem;
+  --f28: 1.75rem;
+  --f30: 2.143rem;
+  --f32: 2rem;
+  /* 32px */
+  --f34: 2.125rem;
+  --f36: 2.571rem;
+  --f40: 2.857rem;
+  --f48: 3.429rem;
+  --f64: 4.571rem;
+  --f80: 5.714rem;
+  --ab-primary-color: #1D1F1E;
+  --Ivy-font: "Ivy Mode";
+  --Libre-franklin: "Libre Franklin", sans-serif;
+  --df-primary-color: #333335;
+  --df-required-tcolor: #E54545;
+}
+
+:export {
+  brandColor: var(--brand-color);
+  defaultFont: var(--plus-jakarta-sans);
+}
+
+.thumbslider-section .swiper {
+  overflow: hidden;
+}
+.thumbslider-section .swiper .swiper-wrapper {
+  padding: 0;
+}
+@media (max-width: 992px) {
+  .thumbslider-section .container {
+    padding: 0;
+  }
+}
+
+.aboutpage-wrapper .blog-main-page-wrapper .blog-main-header {
+  margin-bottom: 55%;
+}
+@media (max-width: 992px) {
+  .aboutpage-wrapper .blog-main-page-wrapper .blog-main-header {
+    margin-bottom: 340%;
+  }
+}
+.aboutpage-wrapper .blog-main-page-wrapper .blog-main-header .latest-stories-sec {
+  left: 5%;
+  width: 90vw;
+  bottom: auto;
+  margin-top: -50px;
+}
+@media (max-width: 992px) {
+  .aboutpage-wrapper .blog-main-page-wrapper .blog-main-header .latest-stories-sec {
+    left: 2%;
+    width: 96vw;
+  }
+}
+.aboutpage-wrapper .blog-main-page-wrapper .blog-main-header .latest-stories-sec h1 {
+  font-size: var(--f64);
+}
+@media (max-width: 992px) {
+  .aboutpage-wrapper .blog-main-page-wrapper .blog-main-header .latest-stories-sec h1 {
+    font-size: var(--f48);
+    font-weight: var(--fw400);
+  }
+}
+.aboutpage-wrapper .quote-section div {
+  max-width: 810px;
+  padding: 0;
+}
+.aboutpage-wrapper .quote-section div h3 {
+  font-size: var(--f48);
+  font-family: var(--playfair-display);
+}
+@media (max-width: 992px) {
+  .aboutpage-wrapper .quote-section div h3 {
+    font-size: var(--f36);
+  }
+}
+.aboutpage-wrapper .quote-section div .before-quote {
+  left: -50px;
+  top: -20px;
+}
+@media (max-width: 992px) {
+  .aboutpage-wrapper .quote-section div .before-quote {
+    left: -20px;
+    top: -40px;
+  }
+}
+.aboutpage-wrapper .quote-section div .after-quote {
+  bottom: 0;
+  right: -50px;
+}
+@media (max-width: 992px) {
+  .aboutpage-wrapper .quote-section div .after-quote {
+    bottom: -10px;
+    right: -23px;
+  }
+}
+.aboutpage-wrapper .our-team-sec .our-team-center-content {
+  width: auto;
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+.aboutpage-wrapper .our-team-sec .our-team-center-content h1 {
+  font-size: var(--f64);
+  font-weight: var(--fw400);
+}
+@media (max-width: 992px) {
+  .aboutpage-wrapper .our-team-sec .our-team-center-content h1 {
+    font-size: var(--f48);
+  }
+}
+.aboutpage-wrapper .our-team-sec .our-team-center-content p {
+  font-size: var(--f16);
+  font-weight: var(--fw400);
+  margin-bottom: 40px;
+}
+@media (max-width: 992px) {
+  .aboutpage-wrapper .our-team-sec .our-team-center-content p {
+    font-size: var(--f14);
+  }
+}
+.aboutpage-wrapper .our-team-sec img {
+  margin-bottom: 60px;
+}
+.aboutpage-wrapper .brand-vision-sec {
+  margin-bottom: 60px;
+}
+@media (max-width: 992px) {
+  .aboutpage-wrapper .brand-vision-sec h1 {
+    font-size: var(--f48);
+  }
+}
+@media (max-width: 992px) {
+  .aboutpage-wrapper .brand-vision-sec .mobile-gap {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 992px) {
+  .aboutpage-wrapper .cara-logos {
+    gap: 10px 10px;
+  }
+}
+@media (max-width: 992px) {
+  .aboutpage-wrapper .create-design-section .choose-section .choose-section-thumb {
+    background: transparent;
+  }
+}

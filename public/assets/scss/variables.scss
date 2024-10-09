@@ -1,0 +1,61 @@
+/* Variables */
+$alice-blue-color: #f0f8ff;
+$brand-color: #121213;
+$brand-light-color: #fff;
+$link-color: rgb(13, 98, 255);
+$link-color-hover: darken($link-color, 10%);
+$black-color: #000;
+$white-color: #fff;
+$white-color-2: #F5F5F5;
+$dark-blue-color: #2A3E52;
+$light-gray-color: #ccc;
+$light-gray-color-1: #A4AAAE;
+$light-gray-color-2: #666666;
+$primary-color: #1d1f1e;
+$light-gray-bg-1: #dedde0;
+$light-gray-bg-2: #F0F6FD;
+$light-gray-bg-3: #D9D9D9;
+$light-gray-bg-4: #F8F8F8;
+$light-gray-bg-5: #748DA6;
+$lighten-dark-color-50: lighten($black-color, 50%);
+$lighten-light-color-50: lighten($white-color, 50%);
+$lighten-transparent-10: fade($white-color, 90%);
+$pos_absolute: absolute;
+$dark-gray-color: #DADEE0;
+$dark-gray-color-2: #2A3E52;
+$light-blue: #F0F6FD;
+$orange: #e24b1b;
+$plate-sliver: #C8C0B3;
+$modal-bg-color: #1d1f1eb5;
+
+
+$default-font: 'Plus Jakarta Sans', sans-serif;
+$secondary-font: 'Prata', serif;
+$special-font: 'Playfair Display', serif;
+
+$default-lg-fontsize: 18px;
+$default-desktop-fontsize: 16px;
+$default-mobile-fontsize: 14px;
+
+$fw400: 400; //fw_thin, fw_normal, fx_medium, fx_bold
+$fw600: 600; // 
+$fweight700: 700;
+
+$f12 : 0.75rem; // 12px 
+$f14 : 0.875rem; // 14px fs_default, fs_sm
+$f16 : 1rem; // 16px fs_medium, fs_xl, fs_xxl
+$f18 : 1.125rem; // 18px fs_medium, fs_xl, fs_xxl
+$f24 : 1.5rem; // 24px fs_lg
+$f36 : 2.25rem; // 36px fs_lg
+$f48 : 3rem; // 48px fs_lg
+$f48 : 3rem; // 48px
+$f64 : 4rem; // 64px fs_h1
+$f80 : 5rem; // 80px fs_h1
+/* Variables */
+
+
+/* exports */
+:export {
+  brandColor: var(--brand-color);
+  defaultFont: var(--plus-jakarta-sans);
+}

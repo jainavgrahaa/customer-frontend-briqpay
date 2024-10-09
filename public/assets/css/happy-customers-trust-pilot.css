@@ -1,0 +1,112 @@
+:root {
+  --color-brown: #957127;
+  --color-milk: #F8F2E7;
+  --color-black: #000;
+  --font-family-libre: "Libre Franklin", sans-serif;
+}
+
+.happymain {
+  margin: 0 auto;
+  max-width: 750px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapperCompanyInfo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.tpWidgetHumanscore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 17px;
+}
+
+.trustpilotReviewCount {
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-size: 1.25em;
+}
+
+.reviewsFilterLabel {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: var(--font-family-libre);
+  margin-bottom: 30px;
+  color: #6a6a6a;
+}
+
+.wrapperReviews {
+  overflow-y: auto;
+  max-height: 600px;
+}
+
+.reviewItem {
+  background-color: var(--color-milk);
+  border-radius: 2px;
+  line-height: 18px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  padding: 15px;
+  position: relative;
+  word-wrap: break-word;
+  font-family: var(--font-family-libre);
+}
+
+.dateUserInfo {
+  display: flex;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+  line-height: 1.2;
+  margin: 15px 0;
+}
+
+.reviewTitle {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.reviewContent {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+  margin-bottom: 0;
+  max-width: 596px;
+  width: 100%;
+}
+
+.moreLink {
+  display: block;
+  font-size: 14px;
+  font-family: var(--font-family-libre);
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 15px;
+  cursor: pointer;
+  color: #00b67a;
+}
+
+.profilestar {
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 100%;
+  height: 25px;
+}

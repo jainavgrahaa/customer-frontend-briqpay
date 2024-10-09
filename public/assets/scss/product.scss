@@ -1,0 +1,677 @@
+@import './variables.scss', "./theme/index.scss", './mixins.scss';
+
+.product-wrapper {
+	.container {
+		.row-lg {
+			@include for-desktop {
+				margin-top: calc(-1 * var(--bs-gutter-y));
+				margin-right: calc(-1 * var(--bs-gutter-x));
+				margin-left: calc(-1 * var(--bs-gutter-x));
+			}
+			& > * {
+				@include for-desktop {
+					padding-right: calc(var(--bs-gutter-x) * 1);
+					padding-left: calc(var(--bs-gutter-x) * 1);
+					margin-top: var(--bs-gutter-y);
+				}
+			}
+		}
+		.heading {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 14px;
+			margin-top: 0px !important;
+			align-items: center !important;
+
+
+			.MuiTypography-h1 {
+				font-size: var(--f24);
+				font-weight: var(--fw600);
+				line-height: 30.24px;
+				margin-bottom: 0px;
+				@include for-tablet-landscape-2{
+					font-size: var(--f20);
+				}
+			}
+
+			.material-icons-outlined {
+				color: var(--light-gray-color-1);
+			}
+		}
+
+		.MuiTypography-body1 {
+			font-size: var(--f14);
+			font-weight: var(--fw400);
+			line-height: 19.6px;
+		}
+
+		.round-diamond-sec {
+			// display: inline-grid;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+
+			.MuiFormControl-root {
+				padding-top: 20px;
+			}
+
+			label {
+				font-size: var(--f16);
+				font-weight: var(--fw600);
+				line-height: 20.16px;
+				color: var(--primary-color);
+				margin-bottom: 16px;
+				margin-left: 0;
+				display: flex;
+
+				.MuiTypography-body1 {
+					font-size: var(--f14);
+					font-weight: var(--fw600);
+				}
+
+				.material-icons-outlined {
+					margin-left: 8px;
+					color: var(--light-gray-color-1);
+				}
+			}
+
+			.MuiButton-contained {
+				background-color: var(--dark-blue-color);
+				margin-bottom: 20px;
+				padding: 12px 26px;
+				text-transform: capitalize;
+			}
+
+			.appointment-btn {
+				display: flex;
+				justify-content: space-between;
+				margin-bottom: 14px;
+				@include for-tablet-landscape-2{
+					flex-direction: column;
+					gap: 10px;
+				}
+				.MuiButton-root{
+					width: 50%;
+					text-transform: capitalize;
+					font-size: var(--f16);
+					@include for-tablet-landscape-2{
+						width: 100% !important;
+					}
+				}
+			}
+
+			.MuiTabPanel-root {
+				padding: 0;
+				.table-container {
+					margin-left: 0;
+					margin-right: 0;
+					margin-bottom: 30px;
+					.MuiTable-root .MuiTableBody-root tr:last-child:nth-child(odd) {
+						position: relative;
+					}
+					.MuiTable-root .MuiTableBody-root{
+						tr{
+						td{
+							.table-cart-btn{
+								padding: 5px 12px;
+								margin: 0px;
+								font-size: var(--f12);
+								min-width: initial;
+								min-height: initial;
+								@include for-desktop{
+								visibility: hidden;
+								}
+							}
+						}
+						@include for-desktop{
+						&:hover{
+							td{
+								.table-cart-btn{
+									visibility: visible;
+								}
+							}
+						}
+					  }
+					}
+					}
+				}
+			}
+
+			.table-container{
+				margin: 0 -15px;
+				.MuiTableContainer-root{
+					.MuiTable-root{
+						.MuiTableCell-root{
+							text-align: center;
+							padding: 6px 2px;
+							font-size: var(--f13);
+							img{
+								width: 28px;
+								height: 28px;
+							}
+							&:first-child{
+								max-width: 30px;
+								padding-left: 5px;
+								button{
+									width: 25px;
+									height: 25px;
+								}
+							}
+							&.add-to-bag-btn{
+								.add-to-bag{
+									padding: 8px 16px;
+								}
+							}
+						}
+						.MuiCollapse-root{
+							max-width: 30px;
+						}
+						div.MuiCollapse-root {
+							max-width: none;
+						}
+					}
+					.collapsed-content-block{
+						td{
+							.product-list{
+								.MuiBox-root{
+									flex-wrap: wrap;
+									text-align: left;
+									.product-details-count{
+									    width: 31%;
+									.MuiTypography-root {
+										&:nth-child(2){
+											font-weight: var(--fw600);
+											display: block;
+										}
+									}
+								}									
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.add-to-bag{
+				margin-bottom: 20px;
+				padding: 4px 24px;
+				background: var(--light-blue);
+				@include for-tablet-landscape-2{
+					margin: 24px 0px;
+					padding: 4px 15px;
+				}
+				.MuiListItemText-root {
+					display: flex;
+					justify-content: space-between;
+					span,p{
+						font-weight: var(--fw600);
+						color: var(--primary-color);
+					}
+
+					&.total{
+						border-top: 1px solid var(--light-gray-color-1);
+						padding-top: 16px;
+						span, p {
+							font-size: 18px;
+						}
+						p{
+							.deleted-price{
+								color: var(--orange);
+								margin-right: 6px;
+								text-decoration: line-through;
+							}
+						}
+					}
+
+					&.total-without-discount{
+						// border-top: 1px solid var(--light-gray-color-1);
+						// padding-top: 16px;
+						span, p{
+							font-size: 18px;
+						}
+						p{
+							.deleted-price{
+								color: var(--orange);
+								margin-right: 6px;
+								text-decoration: line-through;
+							}
+						}
+					}
+				}
+			}
+			.discount-message{
+				padding: 22px 40px;
+				display: flex;
+				justify-content: space-between;
+				background: var(--light-gray-bg-4);
+				cursor: pointer;
+				@include for-tablet-landscape-2{
+					padding: 20px 16px;
+				}
+				.offer{
+					display: flex;
+					gap: 10px;
+					span{
+						font-size: var(--f16);
+						font-weight: var(--fw600);
+					}
+				}
+			}
+			.shipping-info{
+				margin-top: 30px;
+			}
+			.choose-section{
+				margin-top: 16px;
+				padding: 0 30px;
+				@include for-tablet-landscape-2{
+					margin-top: 36px;
+					padding: 0;
+				}
+				.choose-section-thumb{
+					h6{
+						font-size: var(--f14);
+						font-weight: var(--fw400);
+					}
+				}
+			}
+			// .payment-details-section {
+			// 	padding: 20px;
+			// 	@include for-phone-only {
+			// 	  width: 100%;
+			// 	}
+			// 	.payment-card {
+			// 	  width: 634px;
+			// 	  display: flex;
+			// 	  flex-direction: column;
+			// 	  gap: 30px;
+			// 	  @include for-phone-only {
+			// 		width: 100%;
+			// 	  }
+			// 	  .payment-card-wrapper {
+			// 		width: 660px;
+			// 		display: flex;
+			// 		flex-direction: column;
+			// 		gap: 24px;
+			// 		@include for-phone-only {
+			// 		  width: 100%;
+			// 		}
+			// 		.payment-details-wrapper {
+			// 		  display: flex;
+			// 		  flex-direction: column;
+			// 		  gap: 36px;
+			// 		  @include for-phone-only {
+			// 			width: 100%;
+			// 		  }
+			// 		  .payment-details-structure {
+			// 			width: 660px;
+			  
+			// 			gap: 30px;
+			// 			display: flex;
+			// 			flex-direction: column;
+			// 			@include for-phone-only {
+			// 			  width: 100%;
+			// 			}
+			// 			.select-term-section {
+			// 			  width: 660px;
+			// 			  display: flex;
+			// 			  flex-direction: column;
+			// 			  gap: 12px;
+			// 			  @include for-phone-only {
+			// 				width: 100%;
+			// 			  }
+			// 			  .deposit-amount-heading {
+			// 				font-size: 14px;
+			// 				font-weight: 600;
+			// 				line-height: 18px;
+			// 				margin-bottom: 0px !important;
+			// 			  }
+			// 			  .current-selection {
+			// 				width: 189px;
+			  
+			// 				gap: 10px;
+			// 				display: flex;
+			// 				.current-selection-text {
+			// 				  width: 119px;
+			  
+			// 				  font-size: 14px;
+			// 				  font-weight: 400;
+			// 				  line-height: 18px;
+			// 				  text-align: left;
+			// 				}
+			// 				.current-selection-price {
+			// 				  width: 60px;
+			// 				  font-family: Plus Jakarta Sans;
+			// 				  font-size: 14px;
+			// 				  font-weight: 600;
+			// 				  line-height: 18px;
+			// 				  letter-spacing: 0em;
+			// 				  text-align: left;
+			// 				}
+			// 			  }
+			// 			}
+			// 			.select-slider {
+			// 				width: fit-content;
+						
+			// 			  display: flex;
+			// 			  flex-direction: column;
+			// 			  align-items: normal;
+			// 			  gap: 24px;
+			// 			  @include for-phone-only {
+			// 				width: 100%;
+			// 			  }
+			// 			  .css-14c09wx-MuiSlider-root {
+			// 				border-radius: 12px;
+			// 				box-sizing: content-box;
+			// 				display: inline-block;
+			// 				position: relative;
+			// 				cursor: pointer;
+			// 				touch-action: none;
+			// 				-webkit-tap-highlight-color: transparent;
+			// 				height: 10px;
+			// 				width: 100%;
+			// 				padding: 12px 0;
+			// 				margin-bottom: 0px !important;
+			// 				@include for-phone-only {
+			// 				  width: 100%;
+			// 				}
+			// 			  }
+			// 			  .slider-text {
+			// 				display: flex;
+			// 				justify-content: space-between;
+			// 				align-items: center;
+			// 				font-size: 12px;
+			// 				@include for-phone-only {
+			// 				  width: 100%;
+			// 				}
+			// 			  }
+			// 			  .dummy-box {
+			// 				display: flex;
+			// 				justify-content: space-between;
+			// 				align-items: center;
+			// 				margin-top: 10px;
+			// 				width: 100%;
+			// 				@include for-phone-only {
+			// 				  width: 100%;
+			// 				}
+			// 			  }
+			// 			  .first-box {
+			// 				height: 25px;
+			// 				width: 10px;
+			// 				color: var(--light-gray-color-1);
+			// 				border-left-style: dotted;
+			// 				border-bottom-color: var(--light-gray-color-1);
+			// 			  }
+			  
+			// 			  .second-box {
+			// 				height: 25px;
+			// 				width: 340px;
+			// 				margin-right: 85px;
+			// 				color: var(--light-gray-color-1);
+			// 				border-left-style: dotted;
+			// 				border-bottom-style: dotted;
+			// 				border-right-style: dotted;
+			// 				border-bottom-color: var(--light-gray-color-1);
+			// 			  }
+			// 			  .third-box {
+			// 				height: 25px;
+			// 				width: 10px;
+			// 				color: var(--light-gray-color-1);
+			// 				border-right-style: dotted;
+			// 				border-bottom-color: var(--light-gray-color-1);
+			// 			  }
+			// 			  .css-14c09wx-MuiSlider-root {
+			// 				width: 100%;
+			// 			  }
+			// 			}
+			// 			.deposit-amount-section {
+			// 			//   width: 590px;
+			// 			width: 375px;
+			// 			  gap: 30px;
+			// 			  display: flex;
+			// 			  flex-direction: column;
+			// 			  margin-top: 40px;
+			// 			  @include for-phone-only {
+			// 				width: 100%;
+			// 			  }
+			// 			  .deposit-amount {
+			// 				width: 189px;
+			// 				display: flex;
+			// 				flex-direction: column;
+			// 				gap: 12px;
+			// 				.deposit-amount-heading {
+			// 				  font-size: 14px;
+			// 				  font-weight: 600;
+			// 				  line-height: 18px;
+			// 				  text-align: left;
+			// 				  margin-bottom: 0px !important;
+			// 				}
+			// 				.current-selection {
+			// 				  width: 189px;
+			// 				  gap: 10px;
+			// 				  display: flex;
+			// 				  .current-selection-text {
+			// 					width: 119px;			  
+			// 					font-size: 14px;
+			// 					font-weight: 400;
+			// 					line-height: 18px;
+			// 					text-align: left;
+			// 				  }
+			// 				  .current-selection-price {
+			// 					width: 60px;
+			// 					font-family: Plus Jakarta Sans;
+			// 					font-size: 14px;
+			// 					font-weight: 600;
+			// 					line-height: 18px;
+			// 					letter-spacing: 0em;
+			// 					text-align: left;
+			// 				  }
+			// 				}
+			// 			  }
+			// 			  .deposit-amount-btns {
+			// 				width: 510px;
+			// 				display: flex;
+			// 				gap: 20px;
+			// 				@include for-phone-only {
+			// 				  width: 100%;
+			// 				}
+			// 				.btn-1 {
+			// 				//   width: 102px;
+			// 				width: 75px;
+			// 				  height: 44px;
+			// 				  padding: 12px 26px 12px 26px;
+			// 				  border: 1px solid var(--light-gray-color-1);
+			// 				  display: flex;
+			// 				  gap: 10px;
+			// 				  font-size: 14px;
+			// 				  font-weight: 600;
+			// 				  line-height: 18px;
+			// 				  text-align: center;
+			// 				}
+			// 			  }
+			// 			}
+			// 		  }
+			// 		  .payment-details-installments {
+			// 			width: 517px;
+			// 			height: 44px;
+			// 			align-items: center;
+			// 			display: flex;
+			// 			gap: 30px;
+			// 			@include for-phone-only {
+			// 			  width: 100%;
+			// 			}
+			// 			.monthly-amount {
+			// 			  height: 44px;
+			// 			  gap: 8px;
+			// 			  .inner-installments {
+			// 				display: flex;
+			// 				gap: 10px;
+			// 				.installment-details {
+			// 				  font-size: 14px;
+			// 				  font-weight: 400;
+			// 				  line-height: 18px;
+			// 				  text-align: left;
+			// 				}
+			// 				.installment-price {
+			// 				  font-size: 14px;
+			// 				  font-weight: 600;
+			// 				  line-height: 18px;
+			// 				  text-align: left;
+			// 				}
+			// 			  }
+			// 			}
+			// 		  }
+			// 		}
+			// 		.payment-checkbox {
+			// 		  width: 660px;
+			// 		  height: 18px;
+			// 		  gap: 10px;
+			// 		  display: flex;
+			// 		  justify-content: flex-start;
+			// 		  align-items: center;
+			// 		  @include for-phone-only {
+			// 			width: 100%;
+			// 		  }
+			// 		  .checkbox-payment {
+			// 			height: 18px;
+			// 			width: 18px;
+			// 		  }
+			// 		  .checkbox-text {
+			// 			font-size: 14px;
+			// 			font-weight: 600;
+			// 			line-height: 18px;
+			// 			letter-spacing: 0em;
+			// 			text-align: left;
+			// 		  }
+			// 		}
+			// 	  }
+			// 	  .payment-card-button {
+			// 		width: 180px;
+			// 		height: 44px;
+			// 		border: 1px solid var(--Basic-Black);
+			// 		gap: 10px;
+			// 		background-color: #2a3e52;
+			  
+			// 		.btn-text {
+			// 		  color: var(--white-color);
+			// 		  font-size: 14px;
+			// 		  font-weight: 600;
+			// 		  line-height: 18px;
+			// 		  text-align: center;
+			// 		}
+			// 	  }
+			// 	}
+			//   }
+		}
+		a.read-more-link {
+			font-size: var(--f14);
+			font-weight: var(--fw600);
+			line-height: 17.64px;
+			margin-top: 14px;
+			display: block;
+			text-decoration: underline;
+		}
+
+		.accordion-wrapper{
+			margin-bottom: 30px;
+			.MuiAccordion-root{
+				.MuiAccordionSummary-root{
+					@include for-tablet-landscape-2{
+						padding: 0;
+					}
+					.MuiAccordionSummary-content{
+						@include for-tablet-landscape-2{
+							margin: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.MuiFormGroup-root {
+		margin-left: 0;
+
+		.MuiButtonBase-root {
+			padding: 0;
+			margin-right: 12px;
+		}
+	}
+	@include for-tablet-landscape-2{
+		.thumbslider-section{
+		padding: 10px 0 !important;
+		.thumbslider-header{
+			width: 100%;
+			display: block;
+		  .main{
+			.image-container{
+				display: flex !important;
+				gap: 0px !important;
+				>div{
+					width: 49%;
+					margin-bottom: 5px;
+				}
+			}
+		  }
+		}
+		.thumbslider-controls {
+			margin-top: 15px;
+		}
+	}
+	  }
+}
+
+.sm-modal {
+	&.modal {
+		align-items: center;
+		justify-content:  center;
+		.modal-inner {
+			position: relative;
+			@include for-desktop  {
+				min-width: 400px;
+				max-width: 35vw;
+			}
+			.modal-main-content {
+				@include for-desktop  {
+					width: 90%;
+				}
+				.modal-content {
+					padding-left: 20px;
+					padding-right: 20px;
+				}
+				.modal-actions {
+					justify-content: center;
+					@include for-desktop-2 {
+						padding: 20px;
+					}
+					&:last-child {
+						@include for-desktop  {
+							padding-bottom: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.thumbslider-section {
+	&.cat-slider {
+		@include for-desktop {
+			padding: 20px 0;
+		}
+		.container {
+			@include for-desktop {
+				padding: 0;
+			}
+		}
+		.image-container {
+			& > div {
+				display: flex;
+				align-items: flex-start;
+				& > img {
+					object-position: top;
+				}
+			}
+		}
+	}
+}
